@@ -1,2 +1,5 @@
 demo_module/input_videos/
 test_imgs
+yolo_models/
+LAVIS/public/node_modules
+LAVIS/uploads

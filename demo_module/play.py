@@ -1,50 +1,44 @@
 import cv2
-from YOLOv8_TensorRT.models.engine import TRTModule
 import torch
-from YOLOv8_TensorRT.models.utils import blob, letterbox, path_to_list
-from YOLOv8_TensorRT.models.torch_utils import det_postprocess
-from clip_deploy.tensorrt_utils import TensorRTModel
-from clip_deploy import transform, tokenize
-from YOLOv8_TensorRT.config import CLASSES, COLORS
-import onnxruntime
 import time
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 from collections import deque
 from TrackerManager import TrackerManager
 import os
+from ultralytics import YOLO
 
-def get_text_features(labels):
-    txt_sess_options = onnxruntime.SessionOptions()
-    txt_run_options = onnxruntime.RunOptions()
-    txt_onnx_model_path="/data/clip_trt/convert_output/ViT-L_14@336px.fp16.onnx"
-    txt_session = onnxruntime.InferenceSession(txt_onnx_model_path,
-                                        sess_options=txt_sess_options,
-                                        providers=["CUDAExecutionProvider"])
-    text = tokenize(labels)
-    text_features = []
-    for i in range(len(text)):
-        one_text = np.expand_dims(text[i].cpu().numpy(),axis=0)
-        text_feature = txt_session.run(["unnorm_text_features"], {"text":one_text})[0] # 未归一化的文本特征
-        text_feature = torch.tensor(text_feature)
-        text_features.append(text_feature)
-    text_features = torch.squeeze(torch.stack(text_features),dim=1)
-    text_features = text_features / text_features.norm(dim=1, keepdim=True)
-    text_features = text_features.float().cuda()
+# def get_text_features(labels):
+#     txt_sess_options = onnxruntime.SessionOptions()
+#     txt_run_options = onnxruntime.RunOptions()
+#     txt_onnx_model_path="/data/clip_trt/convert_output/ViT-L_14@336px.fp16.onnx"
+#     txt_session = onnxruntime.InferenceSession(txt_onnx_model_path,
+#                                         sess_options=txt_sess_options,
+#                                         providers=["CUDAExecutionProvider"])
+#     text = tokenize(labels)
+#     text_features = []
+#     for i in range(len(text)):
+#         one_text = np.expand_dims(text[i].cpu().numpy(),axis=0)
+#         text_feature = txt_session.run(["unnorm_text_features"], {"text":one_text})[0] # 未归一化的文本特征
+#         text_feature = torch.tensor(text_feature)
+#         text_features.append(text_feature)
+#     text_features = torch.squeeze(torch.stack(text_features),dim=1)
+#     text_features = text_features / text_features.norm(dim=1, keepdim=True)
+#     text_features = text_features.float().cuda()
 
-    return text_features
+#     return text_features
 
-intput_labels = ["cat is sitting on the ground", "cat is jumping onto the windowsill", "cat is standing on the windowsill"]
+# intput_labels = ["cat is sitting on the ground", "cat is jumping onto the windowsill", "cat is standing on the windowsill"]
 # det_clssid_list = [0, 15, 16]
-det_clssid_list = [792, 224, 377]
-text_features = get_text_features(intput_labels)
+det_clssid_list = [792]
+# text_features = get_text_features(intput_labels)
 video_path = '/data/clip_for_video_action_reck/input_videos/cat_jump_to_windowsill.mp4'
 detector_engine_path = '/data/clip_trt/YOLOv8-TensorRT/engines/yolov8x.engine'
 clip_engine_path="/data/clip_trt/convert_output/ViT-L_14@336px.img.fp16.trt"
 device = torch.device('cuda:0')
-DETEngine = TRTModule(detector_engine_path, device)
-CLIPEngine = TensorRTModel(clip_engine_path)
-preprocess = transform(336)
+# DETEngine = TRTModule(detector_engine_path, device)
+# CLIPEngine = TensorRTModel(clip_engine_path)
+# preprocess = transform(336)
 H, W = DETEngine.inp_info[0].shape[-2:]
 DETEngine.set_desired(['num_dets', 'bboxes', 'scores', 'labels'])
 frame_counter = 0
@@ -52,7 +46,7 @@ sample_rate = 3
 caption = ''
 final_img = None    
 check_counter = 0
-bgr_color = COLORS['person']
+# bgr_color = COLORS['person']
 rgb_color = tuple(bgr_color[::-1])
 cap = cv2.VideoCapture(video_path)
 img_save_dir = '/data/clip_for_video_action_reck/video_out_jpg'
@@ -67,16 +61,16 @@ while True:
     start_time = time.perf_counter()
     img_h, img_w, _ = frame.shape
     ori_frame = frame.copy()
-    frame, ratio, dwdh = letterbox(frame, (W, H))
-    rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    tensor = blob(rgb, return_seg=False)
-    dwdh = torch.asarray(dwdh * 2, dtype=torch.float32, device=device)
-    tensor = torch.asarray(tensor, device=device)
-    # inference
-    detector_start_time = time.perf_counter()
-    data = DETEngine(tensor)
-    detector_elapsed = round((time.perf_counter() - detector_start_time) * 1000, 2)
-    bboxes, scores, labels = det_postprocess(data)
+    # frame, ratio, dwdh = letterbox(frame, (W, H))
+    # rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+    # tensor = blob(rgb, return_seg=False)
+    # dwdh = torch.asarray(dwdh * 2, dtype=torch.float32, device=device)
+    # tensor = torch.asarray(tensor, device=device)
+    # # inference
+    # detector_start_time = time.perf_counter()
+    # data = DETEngine(tensor)
+    # detector_elapsed = round((time.perf_counter() - detector_start_time) * 1000, 2)
+    # bboxes, scores, labels = det_postprocess(data)
     bboxes -= dwdh
     bboxes /= ratio
     bboxes = bboxes.cpu()
