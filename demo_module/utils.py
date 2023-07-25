@@ -1,6 +1,8 @@
 from sklearn.cluster import DBSCAN
 import numpy as np
 from scipy.spatial import distance
+from PIL import Image, ImageDraw, ImageFont
+import math
 
 def get_iou(bb1, bb2):
     """
@@ -96,6 +98,36 @@ def merge_overlapping_boxes(boxes):
         merged_boxes.append(merged_box)
 
     return merged_boxes
+
+def caption_multi_line(xy, caption, img, caption_font, rgb_color, xy_shift, isBbox=False, split_len=6):
+    x1, y1 = xy
+    x1_shift, y1_shift = xy_shift
+    split_lines = caption.split(' ')
+    lines = []
+    draw = ImageDraw.Draw(img)
+    if int(len(split_lines) / split_len) == 0:
+        if isBbox:
+            draw.text((x1 + x1_shift, y1 + y1_shift - caption_font.getsize('g')[1]), caption, font=caption_font, fill=rgb_color)
+        else:
+            draw.text((x1, y1), caption, font=caption_font, fill=rgb_color)
+        return img
+    elif int(len(split_lines) / split_len) > 0:
+        for i in range(math.ceil(len(split_lines) / split_len)):
+            lines.append(split_lines[split_len * i: split_len * (i + 1)])
+    y_text = y1
+    x_text = x1
+    if isBbox:
+        y_text = y1 - caption_font.getsize('g')[1] + y1_shift
+        x_text = x1  + x1_shift
+        
+    for line in lines:
+        line_show = ' '.join(line)
+        draw.text((x_text, y_text), line_show, font=caption_font, fill=rgb_color)
+        y_text += caption_font.getsize(line_show)[1]
+    
+    return img
+
+
 
 # def merge_overlapping_boxes(boxes):
 #     merged_boxes = []

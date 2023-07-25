@@ -1,5 +1,7 @@
-demo_module/input_videos/
 test_imgs
 yolo_models/
 public/node_modules
 uploads
+video_out_jpg
+input_videos
+demo_video_output

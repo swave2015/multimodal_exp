@@ -15,7 +15,7 @@ class ObjectTracker:
         self.clipQueue = deque(maxlen=9)
         self.captionQueue = deque(maxlen=capQueuLen)
         self.clipImg = None
-        self.enlarge_factor = 0.5
+        self.enlarge_factor = 1.2
         self.caption_show = 'recognizing'
         self.caption_last_infer = None
         self.caption_keep_counter = 0
