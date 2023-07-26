@@ -20,7 +20,7 @@ rgb_color = (84, 198, 247)
 bgr_color = rgb_color[::-1]
 source = '../input_videos/Clear CCTV shows burglars breaking into Black Country house.MP4'
 target_cls = [792]
-img_save_dir_base = '../video_out_jpg/'
+img_save_dir = '../video_out_jpg/'
 demo_video_save_path = 'demo_video'
 caption_font = ImageFont.truetype("../miscellaneous/fonts/Arial.ttf", 20)
 
@@ -33,14 +33,11 @@ caption_font = ImageFont.truetype("../miscellaneous/fonts/Arial.ttf", 20)
 # print(prompt)
 
 if __name__ == '__main__':
-    source_basename = os.path.basename(source)
-    img_save_dir = os.path.join(img_save_dir_base, source_basename)
     if os.path.exists(os.path.join(img_save_dir)):
         shutil.rmtree(img_save_dir)
     if not os.path.exists(img_save_dir):
         os.makedirs(img_save_dir)   
     yolo_model = YOLO(yolo_model_path)
-    model_blip, vis_processors, _ = load_model_and_preprocess(name="blip2_opt", model_type="pretrain_opt6.7b", is_eval=True, device=device)
     cap = cv2.VideoCapture(source)
     frame_counter = 0
     trackerManager = TrackerManager()
@@ -63,7 +60,8 @@ if __name__ == '__main__':
                 x2 = x2.item()
                 y2 = y2.item()
                 target_boxes.append([x1, y1, x2, y2]) 
-        trackerManager.update_trackers(target_boxes, merge=True)
+        if len(target_boxes) > 0:
+            trackerManager.update_trackers(target_boxes, merge=True)
         if frame_counter % sample_rate == 0:
             trackerManager.updateTrackerClipImg(ori_frame)
             if len(trackerManager.trackers) > 0:
@@ -73,7 +71,6 @@ if __name__ == '__main__':
                             if not os.path.exists(tracker_image_dir):
                                 os.makedirs(tracker_image_dir) 
                             tracker_image_pil = Image.fromarray(cv2.cvtColor(tracker.clipImg, cv2.COLOR_BGR2RGB))
-                            infer_image = vis_processors["eval"](tracker_image_pil).unsqueeze(0).to(device)
                             prompt = None
 
                             # if len(tracker.context) < tracker.context.maxlen:
@@ -94,16 +91,12 @@ if __name__ == '__main__':
                             #     tracker.caption_show = answer[0]
                             # answer = ['this is a image of women dancing and can you see it ha ha ha']
 
-                            message = "what is the person doing?"
-                            template = "Question: {} Answer: {}."
-                            prompt = "Question: " + message + " Answer:"
-                            answer = model_blip.generate({"image": infer_image, "prompt": prompt})
-                            tracker.caption_show = answer[0]
+                            tracker.caption_show = 'this is a very long test caption for my video action reck test'
                             infer_image_filename = f"frame{tracker.keepCounter:04d}.jpg"
                             # Put the text caption on the image
                             print('tracker.caption_show: ', tracker.caption_show)
                             tracker_image_pil = caption_multi_line((10, 20), tracker.caption_show, tracker_image_pil, caption_font, rgb_color, (0, 0))
-                            tracker_image_pil.save(os.path.join(tracker_image_dir, source_basename, filename))
+                            tracker_image_pil.save(os.path.join(tracker_image_dir, filename))
 
         for tracker in trackerManager.trackers:
             x1, y1 = tracker.x1, tracker.y1

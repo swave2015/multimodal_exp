@@ -8,6 +8,19 @@ class TrackerManager:
         self.trackers = []
 
     def update_trackers(self, detection_boxes, merge=True):
+        if len(detection_boxes) == 0:
+            for tracker in self.trackers:
+                tracker.objMissingCounter += 1
+
+        new_trackers = []
+        for tracker in self.trackers:
+            if tracker.objMissingCounter < 1:
+                new_trackers.append(tracker)
+        self.trackers = new_trackers  
+
+        return 
+        
+
         if merge:
             detection_boxes = mergeCloseBboxes(detection_boxes)
             detection_boxes = merge_overlapping_boxes(detection_boxes)
@@ -62,12 +75,12 @@ class TrackerManager:
             if detection_id is None or detection_to_tracker[detection_id] != tracker_id:
                 self.trackers[tracker_id].objMissingCounter += 1
         new_trackers = []
-        for i in range(len(self.trackers)):
-            if self.trackers[i].objMissingCounter < 1:
-                new_trackers.append(self.trackers[i])
+        for tracker in self.trackers:
+            if tracker.objMissingCounter < 1:
+                new_trackers.append(tracker)
         self.trackers = new_trackers   
 
     def updateTrackerClipImg(self, img):
         for tracker in self.trackers:
-            tracker.update_clip_queue(img)
+            tracker.update_clip_queue(img, useBG=True)
                 

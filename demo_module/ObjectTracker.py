@@ -4,7 +4,7 @@ import cv2
 from collections import Counter
 
 class ObjectTracker:
-    def __init__(self, bbox, capQueuLen=10):
+    def __init__(self, bbox, capQueuLen=9, clipQueueLen=5, contextQueuLen=1):
         self.x1 = bbox[0]
         self.y1 = bbox[1]
         self.x2 = bbox[2]
@@ -12,9 +12,10 @@ class ObjectTracker:
         self.id = random.randint(0, 100)
         self.objMissingCounter = 0
         self.keepCounter = 1
-        self.clipQueue = deque(maxlen=9)
+        self.clipQueue = deque(maxlen=clipQueueLen)
         self.captionQueue = deque(maxlen=capQueuLen)
         self.clipImg = None
+        self.context = deque(maxlen=contextQueuLen)
         self.enlarge_factor = 1.2
         self.caption_show = 'recognizing'
         self.caption_last_infer = None
@@ -37,7 +38,10 @@ class ObjectTracker:
         else:
             return
 
-    def update_clip_queue(self, frame):
+    def update_context(self, context):
+        self.context.append(context)
+
+    def update_clip_queue(self, frame, useBG=False):
         box_width = self.x2 - self.x1
         box_height = self.y2 - self.y1
         frame_h, frame_w, _ = frame.shape
@@ -53,38 +57,81 @@ class ObjectTracker:
         crop_img = frame[int(start_y):int(end_y), int(start_x):int(end_x)]
         if crop_img.size > 0:
             self.clipQueue.append(crop_img)
-        if len(self.clipQueue) >= 9:
-            max_width, max_height = 0, 0
-            for img in self.clipQueue:
-                height, width = img.shape[:2]
-                max_width, max_height = max(max_width, width), max(max_height, height)
-            resized_imgs = []
-            for index, img in enumerate(self.clipQueue):
-                height, width = img.shape[:2]
-                scale_ratio_w = max_width / width
-                scale_ratio_h = max_height / height
-                if width * scale_ratio_h <= max_width:
-                    scale_ratio = scale_ratio_h
-                else:
-                    scale_ratio = scale_ratio_w  
-                new_dims = (round(width*scale_ratio), round(height*scale_ratio))
-                resized_img = cv2.resize(img, new_dims, interpolation=cv2.INTER_AREA)
-                pad_color = 0 
-                padded_img = cv2.copyMakeBorder(resized_img, 
-                                            top=0, 
-                                            bottom=max_height - new_dims[1], 
-                                            left=0, 
-                                            right=max_width - new_dims[0], 
-                                            borderType=cv2.BORDER_CONSTANT, 
-                                            value=pad_color)
-                p_h, p_w = padded_img.shape[:2]
-                resized_imgs.append(padded_img)
-            horizontal_imgs = []
-            for i in range(0, len(resized_imgs), 3):
-                concat_img = cv2.hconcat([resized_imgs[i], resized_imgs[i+1], resized_imgs[i+2]])
+
+        if useBG:
+            if len(self.clipQueue) >= 5:
+                max_width, max_height = 0, 0
+                for img in self.clipQueue:
+                    height, width = img.shape[:2]
+                    max_width, max_height = max(max_width, width), max(max_height, height)
+                resized_imgs = []
+                for index, img in enumerate(self.clipQueue):
+                    height, width = img.shape[:2]
+                    scale_ratio_w = max_width / width
+                    scale_ratio_h = max_height / height
+                    if width * scale_ratio_h <= max_width:
+                        scale_ratio = scale_ratio_h
+                    else:
+                        scale_ratio = scale_ratio_w  
+                    new_dims = (round(width*scale_ratio), round(height*scale_ratio))
+                    resized_img = cv2.resize(img, new_dims, interpolation=cv2.INTER_AREA)
+                    pad_color = 0 
+                    padded_img = cv2.copyMakeBorder(resized_img, 
+                                                top=0, 
+                                                bottom=max_height - new_dims[1], 
+                                                left=0, 
+                                                right=max_width - new_dims[0], 
+                                                borderType=cv2.BORDER_CONSTANT, 
+                                                value=pad_color)
+                    p_h, p_w = padded_img.shape[:2]
+                    resized_imgs.append(padded_img)
+                horizontal_imgs = []
+                concat_img = cv2.hconcat([resized_imgs[0], resized_imgs[1], resized_imgs[2], resized_imgs[3]])
                 horizontal_imgs.append(concat_img)
-            self.clipImg = cv2.vconcat(horizontal_imgs)
-            self.clipQueue.popleft()
+                vconcatImg = cv2.vconcat(horizontal_imgs)
+                v_height, v_width, _ = vconcatImg.shape
+                target_width = max(frame_w, v_width)
+                # Calculate scale ratios
+                frame_scale_ratio = target_width / frame_w
+                concatImg_scale_ratio = target_width / v_width
+                frame_resized = cv2.resize(frame, None, fx=frame_scale_ratio, fy=frame_scale_ratio)
+                concatImg_resized = cv2.resize(vconcatImg, None, fx=concatImg_scale_ratio, fy=concatImg_scale_ratio)
+                final_image = cv2.vconcat([frame_resized, concatImg_resized])
+                self.clipImg = final_image
+                self.clipQueue.popleft()
+        else:
+            if len(self.clipQueue) >= 9:
+                max_width, max_height = 0, 0
+                for img in self.clipQueue:
+                    height, width = img.shape[:2]
+                    max_width, max_height = max(max_width, width), max(max_height, height)
+                resized_imgs = []
+                for index, img in enumerate(self.clipQueue):
+                    height, width = img.shape[:2]
+                    scale_ratio_w = max_width / width
+                    scale_ratio_h = max_height / height
+                    if width * scale_ratio_h <= max_width:
+                        scale_ratio = scale_ratio_h
+                    else:
+                        scale_ratio = scale_ratio_w  
+                    new_dims = (round(width*scale_ratio), round(height*scale_ratio))
+                    resized_img = cv2.resize(img, new_dims, interpolation=cv2.INTER_AREA)
+                    pad_color = 0 
+                    padded_img = cv2.copyMakeBorder(resized_img, 
+                                                top=0, 
+                                                bottom=max_height - new_dims[1], 
+                                                left=0, 
+                                                right=max_width - new_dims[0], 
+                                                borderType=cv2.BORDER_CONSTANT, 
+                                                value=pad_color)
+                    p_h, p_w = padded_img.shape[:2]
+                    resized_imgs.append(padded_img)
+                horizontal_imgs = []
+                for i in range(0, len(resized_imgs), 3):
+                    concat_img = cv2.hconcat([resized_imgs[i], resized_imgs[i+1], resized_imgs[i+2]])
+                    horizontal_imgs.append(concat_img)
+                self.clipImg = cv2.vconcat(horizontal_imgs)
+                self.clipQueue.popleft()
         
 
     def get_position(self):
