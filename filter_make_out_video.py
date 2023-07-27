@@ -56,7 +56,7 @@ def caption_multi_line(xy, caption, img, caption_font, rgb_color, xy_shift, isBb
 
 
 # Directory containing the frames
-image_folder = '/data/xcao/code/multimodal_exp/video_out_jpg/birding/demo_video'
+image_folder = '/data/xcao/code/multimodal_exp/video_out_jpg/little_boy_steal_package/demo_video'
 caption_font = ImageFont.truetype("/data/xcao/code/multimodal_exp/miscellaneous/fonts/Arial.ttf", 20)
 # Video file path
 video_path = '/data/xcao/code/multimodal_exp/demo_video_output/output_video.mp4'
@@ -71,7 +71,7 @@ if images:
 
     # Define the codec and create VideoWriter object
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    video = cv2.VideoWriter(video_path, fourcc, 30, (width, height))  # 30 is the fps (frames per second)
+    video = cv2.VideoWriter(video_path, fourcc, 15, (width, height))  # 30 is the fps (frames per second)
 
     # Write each frame to the video file
     for image in images:
@@ -96,6 +96,9 @@ if images:
                         img = caption_multi_line((x1, y1), caption, img, 
                                                     caption_font, rgb_color, (0, 0), 
                                                     isBbox=True, split_len=4)
+                        # img = caption_multi_line((x1, y1), caption + '_' + str(image), img, 
+                        #                             caption_font, rgb_color, (0, 0), 
+                        #                             isBbox=True, split_len=4)
 
         print(image_path)
         numpy_image = np.array(img)
