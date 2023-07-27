@@ -7,7 +7,7 @@ class TrackerManager:
         self.bbox_area_thres = -1
         self.trackers = []
 
-    def update_trackers(self, detection_boxes, keep_counter=1, merge=True):
+    def update_trackers(self, detection_boxes, keep_counter=20, merge=True):
         if len(detection_boxes) == 0:
             for tracker in self.trackers:
                 tracker.objMissingCounter += 1

@@ -18,9 +18,8 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 yolo_model_path = '../yolo_models/yolov8x.pt'
 rgb_color = (84, 198, 247)
 bgr_color = rgb_color[::-1]
-source_path = '../single_videos/birding'
-# target_cls = [792, 75, 377, 224]
-target_cls = [98, 575]
+source_path = '../single_videos/bear'
+target_cls = [792, 75, 377, 224]
 img_save_dir_base = '../video_out_jpg/'
 demo_video_save_path = 'demo_video'
 caption_font = ImageFont.truetype("../miscellaneous/fonts/Arial.ttf", 20)
@@ -39,7 +38,7 @@ def infer_video(source):
     cap = cv2.VideoCapture(source)
     frame_counter = 0
     trackerManager = TrackerManager()
-    sample_rate = 30
+    sample_rate = 15
     while True:
         ret, frame = cap.read()
         if not ret:
@@ -89,7 +88,7 @@ def infer_video(source):
                             #     tracker.caption_show = answer[0]
                             # answer = ['this is a image of women dancing and can you see it ha ha ha']
 
-                            message = "what is the bird doing?"
+                            message = "what is the black bear doing?"
                             template = "Question: {} Answer: {}."
                             prompt = "Question: " + message + " Answer:"
                             answer = model_blip.generate({"image": infer_image, "prompt": prompt})
