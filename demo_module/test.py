@@ -18,9 +18,8 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 yolo_model_path = '../yolo_models/yolov8x.pt'
 rgb_color = (84, 198, 247)
 bgr_color = rgb_color[::-1]
-source_path = '../single_videos/little_boy_steal_package'
-target_cls = [792, 75, 377, 224]
-# target_cls = [98, 575]
+source_path = '../single_videos/Package_Delivery_Driver_Gone_Wrong_FAIL'
+target_cls = [792]
 img_save_dir_base = '../video_out_jpg/'
 demo_video_save_path = 'demo_video'
 caption_font = ImageFont.truetype("../miscellaneous/fonts/Arial.ttf", 20)
@@ -41,7 +40,7 @@ def infer_video(source):
     cap = cv2.VideoCapture(source)
     frame_counter = 0
     trackerManager = TrackerManager()
-    sample_rate = 10
+    sample_rate = 30
     while True:
         ret, frame = cap.read()
         if not ret:
@@ -59,6 +58,16 @@ def infer_video(source):
                 y1 = y1.item()
                 x2 = x2.item()
                 y2 = y2.item()
+                if x1 > 850 and x2 < 990:
+                    continue
+                if x1 > 610 and x2 < 680:
+                    continue
+                if x1 > 870 and x2 < 950:
+                    continue
+                if x1 > 950 and x2 < 1100:
+                    continue
+                if x1 > 700 and x2 < 800:
+                    continue
                 target_boxes.append([x1, y1, x2, y2]) 
         trackerManager.update_trackers(target_boxes, merge=True)
         if frame_counter % sample_rate == 0:
@@ -70,9 +79,7 @@ def infer_video(source):
                             if not os.path.exists(tracker_image_dir):
                                 os.makedirs(tracker_image_dir) 
                             tracker_image_pil = Image.fromarray(cv2.cvtColor(tracker.clipImg, cv2.COLOR_BGR2RGB))
-                            
                             prompt = None
-
                             # if len(tracker.context) < tracker.context.maxlen:
                             #     message = "describe this image."
                             #     template = "Question: {} Answer: {}."
@@ -92,19 +99,15 @@ def infer_video(source):
                             # answer = ['this is a image of women dancing and can you see it ha ha ha']
                             if open_blip:
                                 infer_image = vis_processors["eval"](tracker_image_pil).unsqueeze(0).to(device)
-                                message = "I see a toy car and a boy, what is the boy doing?"
-                                template = "Question: {} Answer: {}."
+                                message = ""
+                                if frame_counter < 190:
+                                    message = "I saw a man and packages, what is the man doing?"
+                                if frame_counter >= 190:
+                                    message = "What action is the man performing:he is falling down or he is standing up or he is kicking the package or he is kicking the pumpkin or he is throwing the pumpkin or he is walking around on the porch or he is walking around in front of the house?"
+                                # template = "Question: {} Answer: {}."
                                 prompt = "Question: " + message + " Answer:"
                                 # if tracker.x1 > 700:
                                 #     prompt = "Question: " + "I see a package and a boy, what is the boy doing?" + " Answer:"
-                                if frame_counter >= 226 and frame_counter < 400:
-                                    prompt = "Question: " + "I see a package and a boy, what is the boy doing?" + " Answer:"
-                                if frame_counter >= 400 and frame_counter < 700:
-                                    prompt = "Question: " + "I see a package, a toy car and a boy, what is the boy doing?" + " Answer:"
-                                if frame_counter >= 700 and frame_counter < 830:
-                                    prompt = "Question: " + "I see a package and a boy, what is the boy doing?" + " Answer:"
-                                if frame_counter >= 830:
-                                    prompt = "Question: " + "I see a toy car and a boy, what is the boy doing?" + " Answer:"
                                 print('prompt_input: ', prompt)
                                 answer = model_blip.generate({"image": infer_image, "prompt": prompt})
                                 tracker.caption_show = answer[0]

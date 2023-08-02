@@ -18,9 +18,8 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 yolo_model_path = '../yolo_models/yolov8x.pt'
 rgb_color = (84, 198, 247)
 bgr_color = rgb_color[::-1]
-source_path = '../single_videos/birding'
-# target_cls = [792, 75, 377, 224]
-target_cls = [98, 575]
+source_path = '../single_videos/thief_breaking_room01'
+target_cls = [792]
 img_save_dir_base = '../video_out_jpg/'
 demo_video_save_path = 'demo_video'
 caption_font = ImageFont.truetype("../miscellaneous/fonts/Arial.ttf", 20)
@@ -41,7 +40,7 @@ def infer_video(source):
     cap = cv2.VideoCapture(source)
     frame_counter = 0
     trackerManager = TrackerManager()
-    sample_rate = 30
+    sample_rate = 15
     while True:
         ret, frame = cap.read()
         if not ret:
@@ -49,7 +48,7 @@ def infer_video(source):
         ori_frame = frame.copy()
         pil_image = Image.fromarray(cv2.cvtColor(ori_frame, cv2.COLOR_BGR2RGB))
         draw = ImageDraw.Draw(pil_image)
-        results = yolo_model.predict(frame, half=True, imgsz=640, conf=0.2)
+        results = yolo_model.predict(frame, half=True, imgsz=640, conf=0.3)
         boxes = results[0].boxes
         target_boxes = []
         for box in boxes:
@@ -59,19 +58,8 @@ def infer_video(source):
                 y1 = y1.item()
                 x2 = x2.item()
                 y2 = y2.item()
-                area = (x2 - x1) * (y2 - y1)
-                if area < (167 * 144) / 3:
-                    continue
-                if 1043 <= frame_counter < 1645:
-                    if y2 > 500 and x2 < 900:
-                        continue
-                    if x1 > 900 and y2 > 700:
-                        continue
                 target_boxes.append([x1, y1, x2, y2]) 
-        if frame_counter == 441 or frame_counter == 1043 or frame_counter == 1645 or frame_counter == 1782:
-            trackerManager.update_trackers(target_boxes, keep_counter = 1, merge=True)
-        else:
-            trackerManager.update_trackers(target_boxes, merge=True)
+        trackerManager.update_trackers(target_boxes, merge=True)
         if frame_counter % sample_rate == 0:
             trackerManager.updateTrackerClipImg(ori_frame)
             if len(trackerManager.trackers) > 0:
@@ -103,19 +91,21 @@ def infer_video(source):
                             # answer = ['this is a image of women dancing and can you see it ha ha ha']
                             if open_blip:
                                 infer_image = vis_processors["eval"](tracker_image_pil).unsqueeze(0).to(device)
-                                message = "what is the bird doing?"
+                                message = "What action is the man performing: he is opening the gate or he is walking?"
                                 template = "Question: {} Answer: {}."
                                 prompt = "Question: " + message + " Answer:"
+                                # if tracker.x1 > 700:
+                                #     prompt = "Question: " + "I see a package and a boy, what is the boy doing?" + " Answer:"
+                                print('prompt_input: ', prompt)
                                 answer = model_blip.generate({"image": infer_image, "prompt": prompt})
                                 tracker.caption_show = answer[0]
-
                             infer_image_filename = f"frame{tracker.keepCounter:04d}.jpg"
                             # Put the text caption on the image
                             print('tracker.caption_show: ', tracker.caption_show)
                             tracker_image_pil = caption_multi_line((10, 20), tracker.caption_show, 
                                                                    tracker_image_pil, caption_font_inputImg, 
                                                                    rgb_color, (0, 0), split_len=10)
-                            tracker_image_pil.save(os.path.join(tracker_image_dir, filename))
+                            tracker_image_pil.save(os.path.join(tracker_image_dir, infer_image_filename))
 
         filename = f"frame{frame_counter:04d}.jpg"
         label_file_name = f"frame{frame_counter:04d}.txt"
@@ -124,12 +114,14 @@ def infer_video(source):
         if not os.path.exists(final_img_save_path):
             os.makedirs(final_img_save_path)
 
-        if len(trackerManager.trackers) == 0:
-            with open(os.path.join(final_img_save_path, label_file_name), 'w') as file:
-                pass
+        with open(os.path.join(final_img_save_path, label_file_name), 'w') as file:
+            pass
         for tracker in trackerManager.trackers:
             x1, y1 = tracker.x1, tracker.y1
             x2, y2 = tracker.x2, tracker.y2
+            
+            if (y1 < 10 and (y2 - y1) > 100) or y1 > 600:
+                continue
 
             # draw.rectangle([x1, y1, x2, y2], outline=rgb_color)
             # if tracker.caption_show != 'recognizing':
@@ -137,6 +129,7 @@ def infer_video(source):
 
             with open(os.path.join(final_img_save_path, label_file_name), 'a') as file:
                 file.write(str(x1) + ';' + str(y1) + ';' + str(x2) + ';' + str(y2) + ';' + tracker.caption_show + "\n")
+                # file.write(str(x1) + ';' + str(y1) + ';' + str(x2) + ';' + str(y2) + ';' + tracker.caption_show + '_' + str(tracker.id) + '_' + str(frame_counter) + "\n")
                     
         pil_image.save(os.path.join(img_save_dir, demo_video_save_path, filename))
         frame_counter += 1

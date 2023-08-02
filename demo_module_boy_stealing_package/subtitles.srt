@@ -1,0 +1,2660 @@
+1
+0:00:10 --> 0:00:10.066667
+The boy is driving the toy car
+
+2
+0:00:10.066667 --> 0:00:10.133333
+The boy is driving the toy car
+
+3
+0:00:10.133333 --> 0:00:10.200000
+The boy is driving the toy car
+
+4
+0:00:10.200000 --> 0:00:10.266667
+The boy is driving the toy car
+
+5
+0:00:10.266667 --> 0:00:10.333333
+The boy is driving the toy car
+
+6
+0:00:10.333333 --> 0:00:10.400000
+The boy is driving the toy car
+
+7
+0:00:10.400000 --> 0:00:10.466667
+The boy is driving the toy car
+
+8
+0:00:10.466667 --> 0:00:10.533333
+The boy is driving the toy car
+
+9
+0:00:10.533333 --> 0:00:10.600000
+The boy is driving the toy car
+
+10
+0:00:10.600000 --> 0:00:10.666667
+The boy is driving the toy car
+
+11
+0:00:10.666667 --> 0:00:10.733333
+the boy is driving the toy car
+
+12
+0:00:10.733333 --> 0:00:10.800000
+the boy is driving the toy car
+
+13
+0:00:10.800000 --> 0:00:10.866667
+the boy is driving the toy car
+
+14
+0:00:10.866667 --> 0:00:10.933333
+the boy is driving the toy car
+
+15
+0:00:10.933333 --> 0:00:11
+the boy is driving the toy car
+
+16
+0:00:11 --> 0:00:11.066667
+the boy is driving the toy car
+
+17
+0:00:11.066667 --> 0:00:11.133333
+the boy is driving the toy car
+
+18
+0:00:11.133333 --> 0:00:11.200000
+the boy is driving the toy car
+
+19
+0:00:11.200000 --> 0:00:11.266667
+the boy is driving the toy car
+
+20
+0:00:11.266667 --> 0:00:11.333333
+the boy is driving the toy car
+
+21
+0:00:11.333333 --> 0:00:11.400000
+the boy is driving the toy car
+
+22
+0:00:11.400000 --> 0:00:11.466667
+the boy is driving the toy car
+
+23
+0:00:11.466667 --> 0:00:11.533333
+the boy is driving the toy car
+
+24
+0:00:11.533333 --> 0:00:11.600000
+the boy is driving the toy car
+
+25
+0:00:11.600000 --> 0:00:11.666667
+the boy is driving the toy car
+
+26
+0:00:11.666667 --> 0:00:11.733333
+the boy is driving the toy car
+
+27
+0:00:11.733333 --> 0:00:11.800000
+the boy is driving the toy car
+
+28
+0:00:11.800000 --> 0:00:11.866667
+the boy is driving the toy car
+
+29
+0:00:11.866667 --> 0:00:11.933333
+the boy is driving the toy car
+
+30
+0:00:11.933333 --> 0:00:12
+the boy is driving the toy car
+
+31
+0:00:12 --> 0:00:12.066667
+the boy is driving the toy car
+
+32
+0:00:12.066667 --> 0:00:12.133333
+the boy is driving the toy car
+
+33
+0:00:12.133333 --> 0:00:12.200000
+the boy is driving the toy car
+
+34
+0:00:12.200000 --> 0:00:12.266667
+the boy is driving the toy car
+
+35
+0:00:12.266667 --> 0:00:12.333333
+the boy is driving the toy car
+
+36
+0:00:12.333333 --> 0:00:12.400000
+the boy is driving the toy car
+
+37
+0:00:12.400000 --> 0:00:12.466667
+the boy is driving the toy car
+
+38
+0:00:12.466667 --> 0:00:12.533333
+the boy is driving the toy car
+
+39
+0:00:12.533333 --> 0:00:12.600000
+the boy is driving the toy car
+
+40
+0:00:12.600000 --> 0:00:12.666667
+the boy is driving the toy car
+
+41
+0:00:12.666667 --> 0:00:12.733333
+the boy is driving the toy car
+
+42
+0:00:12.733333 --> 0:00:12.800000
+the boy is driving the toy car
+
+43
+0:00:12.800000 --> 0:00:12.866667
+the boy is driving the toy car
+
+44
+0:00:12.866667 --> 0:00:12.933333
+the boy is driving the toy car
+
+45
+0:00:12.933333 --> 0:00:13
+the boy is driving the toy car
+
+46
+0:00:13 --> 0:00:13.066667
+the boy is driving the toy car
+
+47
+0:00:13.066667 --> 0:00:13.133333
+the boy is driving the toy car
+
+48
+0:00:13.133333 --> 0:00:13.200000
+the boy is driving the toy car
+
+49
+0:00:13.200000 --> 0:00:13.266667
+the boy is driving the toy car
+
+50
+0:00:13.266667 --> 0:00:13.333333
+the boy is driving the toy car
+
+51
+0:00:13.333333 --> 0:00:13.400000
+the boy is driving the toy car
+
+52
+0:00:13.400000 --> 0:00:13.466667
+the boy is driving the toy car
+
+53
+0:00:13.466667 --> 0:00:13.533333
+the boy is driving the toy car
+
+54
+0:00:13.533333 --> 0:00:13.600000
+the boy is driving the toy car
+
+55
+0:00:13.600000 --> 0:00:13.666667
+the boy is driving the toy car
+
+56
+0:00:13.666667 --> 0:00:13.733333
+the boy is driving the toy car
+
+57
+0:00:13.733333 --> 0:00:13.800000
+the boy is driving the toy car
+
+58
+0:00:13.800000 --> 0:00:13.866667
+the boy is driving the toy car
+
+59
+0:00:13.866667 --> 0:00:13.933333
+the boy is driving the toy car
+
+60
+0:00:13.933333 --> 0:00:14
+the boy is driving the toy car
+
+61
+0:00:14 --> 0:00:14.066667
+the boy is driving the toy car
+
+62
+0:00:14.066667 --> 0:00:14.133333
+the boy is driving the toy car
+
+63
+0:00:14.133333 --> 0:00:14.200000
+the boy is driving the toy car
+
+64
+0:00:14.200000 --> 0:00:14.266667
+the boy is driving the toy car
+
+65
+0:00:14.266667 --> 0:00:14.333333
+the boy is driving the toy car
+
+66
+0:00:14.333333 --> 0:00:14.400000
+the boy is driving the toy car
+
+67
+0:00:14.400000 --> 0:00:14.466667
+the boy is driving the toy car
+
+68
+0:00:14.466667 --> 0:00:14.533333
+the boy is driving the toy car
+
+69
+0:00:14.533333 --> 0:00:14.600000
+the boy is driving the toy car
+
+70
+0:00:14.600000 --> 0:00:14.666667
+the boy is driving the toy car
+
+71
+0:00:14.666667 --> 0:00:14.733333
+the boy is playing with his toy car
+
+72
+0:00:14.733333 --> 0:00:14.800000
+the boy is playing with his toy car
+
+73
+0:00:14.800000 --> 0:00:14.866667
+the boy is playing with his toy car
+
+74
+0:00:14.866667 --> 0:00:14.933333
+the boy is playing with his toy car
+
+75
+0:00:14.933333 --> 0:00:15
+the boy is playing with his toy car
+
+76
+0:00:15 --> 0:00:15.066667
+the boy is playing with his toy car
+
+77
+0:00:15.066667 --> 0:00:15.133333
+the boy is playing with his toy car
+
+78
+0:00:15.133333 --> 0:00:15.200000
+the boy is playing with his toy car
+
+79
+0:00:15.200000 --> 0:00:15.266667
+the boy is playing with his toy car
+
+80
+0:00:15.266667 --> 0:00:15.333333
+the boy is playing with his toy car
+
+81
+0:00:15.333333 --> 0:00:15.400000
+the boy is playing with the package
+
+82
+0:00:15.400000 --> 0:00:15.466667
+the boy is playing with the package
+
+83
+0:00:15.466667 --> 0:00:15.533333
+the boy is playing with the package
+
+84
+0:00:15.533333 --> 0:00:15.600000
+the boy is playing with the package
+
+85
+0:00:15.600000 --> 0:00:15.666667
+the boy is playing with the package
+
+86
+0:00:15.666667 --> 0:00:15.733333
+the boy is playing with the package
+
+87
+0:00:15.733333 --> 0:00:15.800000
+the boy is playing with the package
+
+88
+0:00:15.800000 --> 0:00:15.866667
+the boy is playing with the package
+
+89
+0:00:15.866667 --> 0:00:15.933333
+the boy is playing with the package
+
+90
+0:00:15.933333 --> 0:00:16
+the boy is playing with the package
+
+91
+0:00:16 --> 0:00:16.066667
+the boy is playing with the package
+
+92
+0:00:16.066667 --> 0:00:16.133333
+the boy is playing with the package
+
+93
+0:00:16.133333 --> 0:00:16.200000
+the boy is playing with the package
+
+94
+0:00:16.200000 --> 0:00:16.266667
+the boy is playing with the package
+
+95
+0:00:16.266667 --> 0:00:16.333333
+the boy is playing with the package
+
+96
+0:00:16.333333 --> 0:00:16.400000
+the boy is playing with the package
+
+97
+0:00:16.400000 --> 0:00:16.466667
+the boy is playing with the package
+
+98
+0:00:16.466667 --> 0:00:16.533333
+the boy is playing with the package
+
+99
+0:00:16.533333 --> 0:00:16.600000
+the boy is playing with the package
+
+100
+0:00:16.600000 --> 0:00:16.666667
+the boy is playing with the package
+
+101
+0:00:16.666667 --> 0:00:16.733333
+the boy is playing with the package
+
+102
+0:00:16.733333 --> 0:00:16.800000
+the boy is playing with the package
+
+103
+0:00:16.800000 --> 0:00:16.866667
+the boy is playing with the package
+
+104
+0:00:16.866667 --> 0:00:16.933333
+the boy is playing with the package
+
+105
+0:00:16.933333 --> 0:00:17
+the boy is playing with the package
+
+106
+0:00:17 --> 0:00:17.066667
+the boy is playing with the package
+
+107
+0:00:17.066667 --> 0:00:17.133333
+the boy is playing with the package
+
+108
+0:00:17.133333 --> 0:00:17.200000
+the boy is playing with the package
+
+109
+0:00:17.200000 --> 0:00:17.266667
+the boy is playing with the package
+
+110
+0:00:17.266667 --> 0:00:17.333333
+the boy is playing with the package
+
+111
+0:00:17.333333 --> 0:00:17.400000
+the boy is playing with the package
+
+112
+0:00:17.400000 --> 0:00:17.466667
+the boy is playing with the package
+
+113
+0:00:17.466667 --> 0:00:17.533333
+the boy is playing with the package
+
+114
+0:00:17.533333 --> 0:00:17.600000
+the boy is playing with the package
+
+115
+0:00:17.600000 --> 0:00:17.666667
+the boy is playing with the package
+
+116
+0:00:17.666667 --> 0:00:17.733333
+the boy is playing with the package
+
+117
+0:00:17.733333 --> 0:00:17.800000
+the boy is playing with the package
+
+118
+0:00:17.800000 --> 0:00:17.866667
+the boy is playing with the package
+
+119
+0:00:17.866667 --> 0:00:17.933333
+the boy is playing with the package
+
+120
+0:00:17.933333 --> 0:00:18
+the boy is playing with the package
+
+121
+0:00:18 --> 0:00:18.066667
+
+
+122
+0:00:18.066667 --> 0:00:18.133333
+
+
+123
+0:00:18.133333 --> 0:00:18.200000
+
+
+124
+0:00:18.200000 --> 0:00:18.266667
+
+
+125
+0:00:18.266667 --> 0:00:18.333333
+
+
+126
+0:00:18.333333 --> 0:00:18.400000
+
+
+127
+0:00:18.400000 --> 0:00:18.466667
+
+
+128
+0:00:18.466667 --> 0:00:18.533333
+
+
+129
+0:00:18.533333 --> 0:00:18.600000
+
+
+130
+0:00:18.600000 --> 0:00:18.666667
+
+
+131
+0:00:18.666667 --> 0:00:18.733333
+
+
+132
+0:00:18.733333 --> 0:00:18.800000
+
+
+133
+0:00:18.800000 --> 0:00:18.866667
+
+
+134
+0:00:18.866667 --> 0:00:18.933333
+
+
+135
+0:00:18.933333 --> 0:00:19
+
+
+136
+0:00:19 --> 0:00:19.066667
+
+
+137
+0:00:19.066667 --> 0:00:19.133333
+
+
+138
+0:00:19.133333 --> 0:00:19.200000
+
+
+139
+0:00:19.200000 --> 0:00:19.266667
+
+
+140
+0:00:19.266667 --> 0:00:19.333333
+
+
+141
+0:00:19.333333 --> 0:00:19.400000
+
+
+142
+0:00:19.400000 --> 0:00:19.466667
+
+
+143
+0:00:19.466667 --> 0:00:19.533333
+
+
+144
+0:00:19.533333 --> 0:00:19.600000
+
+
+145
+0:00:19.600000 --> 0:00:19.666667
+
+
+146
+0:00:19.666667 --> 0:00:19.733333
+
+
+147
+0:00:19.733333 --> 0:00:19.800000
+
+
+148
+0:00:19.800000 --> 0:00:19.866667
+
+
+149
+0:00:19.866667 --> 0:00:19.933333
+
+
+150
+0:00:19.933333 --> 0:00:20
+
+
+151
+0:00:20 --> 0:00:20.066667
+
+
+152
+0:00:20.066667 --> 0:00:20.133333
+
+
+153
+0:00:20.133333 --> 0:00:20.200000
+
+
+154
+0:00:20.200000 --> 0:00:20.266667
+
+
+155
+0:00:20.266667 --> 0:00:20.333333
+
+
+156
+0:00:20.333333 --> 0:00:20.400000
+
+
+157
+0:00:20.400000 --> 0:00:20.466667
+
+
+158
+0:00:20.466667 --> 0:00:20.533333
+
+
+159
+0:00:20.533333 --> 0:00:20.600000
+
+
+160
+0:00:20.600000 --> 0:00:20.666667
+
+
+161
+0:00:20.666667 --> 0:00:20.733333
+
+
+162
+0:00:20.733333 --> 0:00:20.800000
+
+
+163
+0:00:20.800000 --> 0:00:20.866667
+
+
+164
+0:00:20.866667 --> 0:00:20.933333
+
+
+165
+0:00:20.933333 --> 0:00:21
+
+
+166
+0:00:21 --> 0:00:21.066667
+
+
+167
+0:00:21.066667 --> 0:00:21.133333
+
+
+168
+0:00:21.133333 --> 0:00:21.200000
+
+
+169
+0:00:21.200000 --> 0:00:21.266667
+
+
+170
+0:00:21.266667 --> 0:00:21.333333
+
+
+171
+0:00:21.333333 --> 0:00:21.400000
+
+
+172
+0:00:21.400000 --> 0:00:21.466667
+
+
+173
+0:00:21.466667 --> 0:00:21.533333
+
+
+174
+0:00:21.533333 --> 0:00:21.600000
+
+
+175
+0:00:21.600000 --> 0:00:21.666667
+
+
+176
+0:00:21.666667 --> 0:00:21.733333
+
+
+177
+0:00:21.733333 --> 0:00:21.800000
+
+
+178
+0:00:21.800000 --> 0:00:21.866667
+
+
+179
+0:00:21.866667 --> 0:00:21.933333
+
+
+180
+0:00:21.933333 --> 0:00:22
+
+
+181
+0:00:22 --> 0:00:22.066667
+
+
+182
+0:00:22.066667 --> 0:00:22.133333
+
+
+183
+0:00:22.133333 --> 0:00:22.200000
+
+
+184
+0:00:22.200000 --> 0:00:22.266667
+
+
+185
+0:00:22.266667 --> 0:00:22.333333
+
+
+186
+0:00:22.333333 --> 0:00:22.400000
+
+
+187
+0:00:22.400000 --> 0:00:22.466667
+
+
+188
+0:00:22.466667 --> 0:00:22.533333
+
+
+189
+0:00:22.533333 --> 0:00:22.600000
+
+
+190
+0:00:22.600000 --> 0:00:22.666667
+
+
+191
+0:00:22.666667 --> 0:00:22.733333
+
+
+192
+0:00:22.733333 --> 0:00:22.800000
+
+
+193
+0:00:22.800000 --> 0:00:22.866667
+
+
+194
+0:00:22.866667 --> 0:00:22.933333
+
+
+195
+0:00:22.933333 --> 0:00:23
+
+
+196
+0:00:23 --> 0:00:23.066667
+
+
+197
+0:00:23.066667 --> 0:00:23.133333
+
+
+198
+0:00:23.133333 --> 0:00:23.200000
+
+
+199
+0:00:23.200000 --> 0:00:23.266667
+
+
+200
+0:00:23.266667 --> 0:00:23.333333
+
+
+201
+0:00:23.333333 --> 0:00:23.400000
+
+
+202
+0:00:23.400000 --> 0:00:23.466667
+
+
+203
+0:00:23.466667 --> 0:00:23.533333
+
+
+204
+0:00:23.533333 --> 0:00:23.600000
+
+
+205
+0:00:23.600000 --> 0:00:23.666667
+
+
+206
+0:00:23.666667 --> 0:00:23.733333
+
+
+207
+0:00:23.733333 --> 0:00:23.800000
+
+
+208
+0:00:23.800000 --> 0:00:23.866667
+
+
+209
+0:00:23.866667 --> 0:00:23.933333
+
+
+210
+0:00:23.933333 --> 0:00:24
+
+
+211
+0:00:24 --> 0:00:24.066667
+
+
+212
+0:00:24.066667 --> 0:00:24.133333
+
+
+213
+0:00:24.133333 --> 0:00:24.200000
+
+
+214
+0:00:24.200000 --> 0:00:24.266667
+
+
+215
+0:00:24.266667 --> 0:00:24.333333
+
+
+216
+0:00:24.333333 --> 0:00:24.400000
+
+
+217
+0:00:24.400000 --> 0:00:24.466667
+
+
+218
+0:00:24.466667 --> 0:00:24.533333
+
+
+219
+0:00:24.533333 --> 0:00:24.600000
+
+
+220
+0:00:24.600000 --> 0:00:24.666667
+
+
+221
+0:00:24.666667 --> 0:00:24.733333
+
+
+222
+0:00:24.733333 --> 0:00:24.800000
+
+
+223
+0:00:24.800000 --> 0:00:24.866667
+
+
+224
+0:00:24.866667 --> 0:00:24.933333
+
+
+225
+0:00:24.933333 --> 0:00:25
+
+
+226
+0:00:25 --> 0:00:25.066667
+
+
+227
+0:00:25.066667 --> 0:00:25.133333
+
+
+228
+0:00:25.133333 --> 0:00:25.200000
+
+
+229
+0:00:25.200000 --> 0:00:25.266667
+
+
+230
+0:00:25.266667 --> 0:00:25.333333
+
+
+231
+0:00:25.333333 --> 0:00:25.400000
+
+
+232
+0:00:25.400000 --> 0:00:25.466667
+
+
+233
+0:00:25.466667 --> 0:00:25.533333
+
+
+234
+0:00:25.533333 --> 0:00:25.600000
+
+
+235
+0:00:25.600000 --> 0:00:25.666667
+
+
+236
+0:00:25.666667 --> 0:00:25.733333
+
+
+237
+0:00:25.733333 --> 0:00:25.800000
+
+
+238
+0:00:25.800000 --> 0:00:25.866667
+
+
+239
+0:00:25.866667 --> 0:00:25.933333
+
+
+240
+0:00:25.933333 --> 0:00:26
+
+
+241
+0:00:26 --> 0:00:26.066667
+
+
+242
+0:00:26.066667 --> 0:00:26.133333
+
+
+243
+0:00:26.133333 --> 0:00:26.200000
+
+
+244
+0:00:26.200000 --> 0:00:26.266667
+
+
+245
+0:00:26.266667 --> 0:00:26.333333
+
+
+246
+0:00:26.333333 --> 0:00:26.400000
+
+
+247
+0:00:26.400000 --> 0:00:26.466667
+
+
+248
+0:00:26.466667 --> 0:00:26.533333
+
+
+249
+0:00:26.533333 --> 0:00:26.600000
+
+
+250
+0:00:26.600000 --> 0:00:26.666667
+
+
+251
+0:00:26.666667 --> 0:00:26.733333
+he is playing with the toy car
+
+252
+0:00:26.733333 --> 0:00:26.800000
+he is playing with the toy car
+
+253
+0:00:26.800000 --> 0:00:26.866667
+he is playing with the toy car
+
+254
+0:00:26.866667 --> 0:00:26.933333
+he is playing with the toy car
+
+255
+0:00:26.933333 --> 0:00:27
+he is playing with the toy car
+
+256
+0:00:27 --> 0:00:27.066667
+he is playing with the toy car
+
+257
+0:00:27.066667 --> 0:00:27.133333
+he is playing with the toy car
+
+258
+0:00:27.133333 --> 0:00:27.200000
+he is playing with the toy car
+
+259
+0:00:27.200000 --> 0:00:27.266667
+he is playing with the toy car
+
+260
+0:00:27.266667 --> 0:00:27.333333
+he is playing with the toy car
+
+261
+0:00:27.333333 --> 0:00:27.400000
+he is playing with his new toy
+
+262
+0:00:27.400000 --> 0:00:27.466667
+he is playing with his new toy
+
+263
+0:00:27.466667 --> 0:00:27.533333
+he is playing with his new toy
+
+264
+0:00:27.533333 --> 0:00:27.600000
+he is playing with his new toy
+
+265
+0:00:27.600000 --> 0:00:27.666667
+he is playing with his new toy
+
+266
+0:00:27.666667 --> 0:00:27.733333
+he is playing with his new toy
+
+267
+0:00:27.733333 --> 0:00:27.800000
+he is playing with his new toy
+
+268
+0:00:27.800000 --> 0:00:27.866667
+he is playing with his new toy
+
+269
+0:00:27.866667 --> 0:00:27.933333
+he is playing with his new toy
+
+270
+0:00:27.933333 --> 0:00:28
+he is playing with his new toy
+
+271
+0:00:28 --> 0:00:28.066667
+he is playing with his new toy
+
+272
+0:00:28.066667 --> 0:00:28.133333
+he is playing with his new toy
+
+273
+0:00:28.133333 --> 0:00:28.200000
+he is playing with his new toy
+
+274
+0:00:28.200000 --> 0:00:28.266667
+he is playing with his new toy
+
+275
+0:00:28.266667 --> 0:00:28.333333
+he is playing with his new toy
+
+276
+0:00:28.333333 --> 0:00:28.400000
+he is playing with his new toy
+
+277
+0:00:28.400000 --> 0:00:28.466667
+he is playing with his new toy
+
+278
+0:00:28.466667 --> 0:00:28.533333
+he is playing with his new toy
+
+279
+0:00:28.533333 --> 0:00:28.600000
+he is playing with his new toy
+
+280
+0:00:28.600000 --> 0:00:28.666667
+he is playing with his new toy
+
+281
+0:00:28.666667 --> 0:00:28.733333
+he's delivering the package
+
+282
+0:00:28.733333 --> 0:00:28.800000
+he's delivering the package
+
+283
+0:00:28.800000 --> 0:00:28.866667
+he's delivering the package
+
+284
+0:00:28.866667 --> 0:00:28.933333
+he's delivering the package
+
+285
+0:00:28.933333 --> 0:00:29
+he's delivering the package
+
+286
+0:00:29 --> 0:00:29.066667
+he's delivering the package
+
+287
+0:00:29.066667 --> 0:00:29.133333
+he's delivering the package
+
+288
+0:00:29.133333 --> 0:00:29.200000
+he's delivering the package
+
+289
+0:00:29.200000 --> 0:00:29.266667
+he's delivering the package
+
+290
+0:00:29.266667 --> 0:00:29.333333
+he's delivering the package
+
+291
+0:00:29.333333 --> 0:00:29.400000
+he's delivering the package
+
+292
+0:00:29.400000 --> 0:00:29.466667
+he's delivering the package
+
+293
+0:00:29.466667 --> 0:00:29.533333
+he's delivering the package
+
+294
+0:00:29.533333 --> 0:00:29.600000
+he's delivering the package
+
+295
+0:00:29.600000 --> 0:00:29.666667
+he's delivering the package
+
+296
+0:00:29.666667 --> 0:00:29.733333
+he's delivering the package
+
+297
+0:00:29.733333 --> 0:00:29.800000
+he's delivering the package
+
+298
+0:00:29.800000 --> 0:00:29.866667
+he's delivering the package
+
+299
+0:00:29.866667 --> 0:00:29.933333
+he's delivering the package
+
+300
+0:00:29.933333 --> 0:00:30
+he's delivering the package
+
+301
+0:00:30 --> 0:00:30.066667
+he's playing with his new toy
+
+302
+0:00:30.066667 --> 0:00:30.133333
+he's playing with his new toy
+
+303
+0:00:30.133333 --> 0:00:30.200000
+he's playing with his new toy
+
+304
+0:00:30.200000 --> 0:00:30.266667
+he's playing with his new toy
+
+305
+0:00:30.266667 --> 0:00:30.333333
+he's playing with his new toy
+
+306
+0:00:30.333333 --> 0:00:30.400000
+he's playing with his new toy
+
+307
+0:00:30.400000 --> 0:00:30.466667
+he's playing with his new toy
+
+308
+0:00:30.466667 --> 0:00:30.533333
+he's playing with his new toy
+
+309
+0:00:30.533333 --> 0:00:30.600000
+he's playing with his new toy
+
+310
+0:00:30.600000 --> 0:00:30.666667
+he's playing with his new toy
+
+311
+0:00:30.666667 --> 0:00:30.733333
+
+
+312
+0:00:30.733333 --> 0:00:30.800000
+
+
+313
+0:00:30.800000 --> 0:00:30.866667
+
+
+314
+0:00:30.866667 --> 0:00:30.933333
+
+
+315
+0:00:30.933333 --> 0:00:31
+
+
+316
+0:00:31 --> 0:00:31.066667
+
+
+317
+0:00:31.066667 --> 0:00:31.133333
+
+
+318
+0:00:31.133333 --> 0:00:31.200000
+
+
+319
+0:00:31.200000 --> 0:00:31.266667
+
+
+320
+0:00:31.266667 --> 0:00:31.333333
+
+
+321
+0:00:31.333333 --> 0:00:31.400000
+the boy is playing with the toy car
+
+322
+0:00:31.400000 --> 0:00:31.466667
+the boy is playing with the toy car
+
+323
+0:00:31.466667 --> 0:00:31.533333
+the boy is playing with the toy car
+
+324
+0:00:31.533333 --> 0:00:31.600000
+the boy is playing with the toy car
+
+325
+0:00:31.600000 --> 0:00:31.666667
+the boy is playing with the toy car
+
+326
+0:00:31.666667 --> 0:00:31.733333
+the boy is playing with the toy car
+
+327
+0:00:31.733333 --> 0:00:31.800000
+the boy is playing with the toy car
+
+328
+0:00:31.800000 --> 0:00:31.866667
+the boy is playing with the toy car
+
+329
+0:00:31.866667 --> 0:00:31.933333
+the boy is playing with the toy car
+
+330
+0:00:31.933333 --> 0:00:32
+the boy is playing with the toy car
+
+331
+0:00:32 --> 0:00:32.066667
+he is playing with his new toy car
+
+332
+0:00:32.066667 --> 0:00:32.133333
+he is playing with his new toy car
+
+333
+0:00:32.133333 --> 0:00:32.200000
+he is playing with his new toy car
+
+334
+0:00:32.200000 --> 0:00:32.266667
+he is playing with his new toy car
+
+335
+0:00:32.266667 --> 0:00:32.333333
+he is playing with his new toy car
+
+336
+0:00:32.333333 --> 0:00:32.400000
+he is playing with his new toy car
+
+337
+0:00:32.400000 --> 0:00:32.466667
+he is playing with his new toy car
+
+338
+0:00:32.466667 --> 0:00:32.533333
+he is playing with his new toy car
+
+339
+0:00:42.666667 --> 0:00:42.733333
+he's delivering the package
+
+340
+0:00:42.733333 --> 0:00:42.800000
+he's delivering the package
+
+341
+0:00:42.800000 --> 0:00:42.866667
+he's delivering the package
+
+342
+0:00:42.866667 --> 0:00:42.933333
+he's delivering the package
+
+343
+0:00:42.933333 --> 0:00:43
+he's delivering the package
+
+344
+0:00:43 --> 0:00:43.066667
+he's delivering the package
+
+345
+0:00:43.066667 --> 0:00:43.133333
+he's delivering the package
+
+346
+0:00:43.133333 --> 0:00:43.200000
+he's delivering the package
+
+347
+0:00:43.200000 --> 0:00:43.266667
+he's delivering the package
+
+348
+0:00:43.266667 --> 0:00:43.333333
+he's delivering the package
+
+349
+0:00:43.333333 --> 0:00:43.400000
+he is playing with his new toy car
+
+350
+0:00:43.400000 --> 0:00:43.466667
+he is playing with his new toy car
+
+351
+0:00:43.466667 --> 0:00:43.533333
+he is playing with his new toy car
+
+352
+0:00:43.533333 --> 0:00:43.600000
+he is playing with his new toy car
+
+353
+0:00:43.600000 --> 0:00:43.666667
+he is playing with his new toy car
+
+354
+0:00:43.666667 --> 0:00:43.733333
+he is playing with his new toy car
+
+355
+0:00:43.733333 --> 0:00:43.800000
+he is playing with his new toy car
+
+356
+0:00:43.800000 --> 0:00:43.866667
+he is playing with his new toy car
+
+357
+0:00:43.866667 --> 0:00:43.933333
+he is playing with his new toy car
+
+358
+0:00:43.933333 --> 0:00:44
+he is playing with his new toy car
+
+359
+0:00:44 --> 0:00:44.066667
+he is playing with his new toy car
+
+360
+0:00:44.066667 --> 0:00:44.133333
+he is playing with his new toy car
+
+361
+0:00:44.133333 --> 0:00:44.200000
+he is playing with his new toy car
+
+362
+0:00:44.200000 --> 0:00:44.266667
+he is playing with his new toy car
+
+363
+0:00:44.266667 --> 0:00:44.333333
+he is playing with his new toy car
+
+364
+0:00:44.333333 --> 0:00:44.400000
+he is playing with his new toy car
+
+365
+0:00:44.400000 --> 0:00:44.466667
+he is playing with his new toy car
+
+366
+0:00:44.466667 --> 0:00:44.533333
+he is playing with his new toy car
+
+367
+0:00:44.533333 --> 0:00:44.600000
+he is playing with his new toy car
+
+368
+0:00:44.600000 --> 0:00:44.666667
+he is playing with his new toy car
+
+369
+0:00:44.666667 --> 0:00:44.733333
+the boy is delivering the package
+
+370
+0:00:44.733333 --> 0:00:44.800000
+the boy is delivering the package
+
+371
+0:00:44.800000 --> 0:00:44.866667
+the boy is delivering the package
+
+372
+0:00:44.866667 --> 0:00:44.933333
+the boy is delivering the package
+
+373
+0:00:44.933333 --> 0:00:45
+the boy is delivering the package
+
+374
+0:00:45 --> 0:00:45.066667
+the boy is delivering the package
+
+375
+0:00:45.066667 --> 0:00:45.133333
+the boy is delivering the package
+
+376
+0:00:45.133333 --> 0:00:45.200000
+the boy is delivering the package
+
+377
+0:00:45.200000 --> 0:00:45.266667
+the boy is delivering the package
+
+378
+0:00:45.266667 --> 0:00:45.333333
+the boy is delivering the package
+
+379
+0:00:45.333333 --> 0:00:45.400000
+The boy is playing with the toy car
+
+380
+0:00:45.400000 --> 0:00:45.466667
+The boy is playing with the toy car
+
+381
+0:00:45.466667 --> 0:00:45.533333
+The boy is playing with the toy car
+
+382
+0:00:45.533333 --> 0:00:45.600000
+The boy is playing with the toy car
+
+383
+0:00:45.600000 --> 0:00:45.666667
+The boy is playing with the toy car
+
+384
+0:00:45.666667 --> 0:00:45.733333
+The boy is playing with the toy car
+
+385
+0:00:45.733333 --> 0:00:45.800000
+The boy is playing with the toy car
+
+386
+0:00:45.800000 --> 0:00:45.866667
+The boy is playing with the toy car
+
+387
+0:00:45.866667 --> 0:00:45.933333
+The boy is playing with the toy car
+
+388
+0:00:45.933333 --> 0:00:46
+The boy is playing with the toy car
+
+389
+0:00:46 --> 0:00:46.066667
+The boy is delivering the package
+
+390
+0:00:46.066667 --> 0:00:46.133333
+The boy is delivering the package
+
+391
+0:00:46.133333 --> 0:00:46.200000
+The boy is delivering the package
+
+392
+0:00:46.200000 --> 0:00:46.266667
+The boy is delivering the package
+
+393
+0:00:46.266667 --> 0:00:46.333333
+The boy is delivering the package
+
+394
+0:00:46.333333 --> 0:00:46.400000
+The boy is delivering the package
+
+395
+0:00:46.400000 --> 0:00:46.466667
+The boy is delivering the package
+
+396
+0:00:46.466667 --> 0:00:46.533333
+The boy is delivering the package
+
+397
+0:00:46.533333 --> 0:00:46.600000
+The boy is delivering the package
+
+398
+0:00:46.600000 --> 0:00:46.666667
+The boy is delivering the package
+
+399
+0:00:46.666667 --> 0:00:46.733333
+The boy is playing with the package
+
+400
+0:00:46.733333 --> 0:00:46.800000
+The boy is playing with the package
+
+401
+0:00:46.800000 --> 0:00:46.866667
+The boy is playing with the package
+
+402
+0:00:46.866667 --> 0:00:46.933333
+The boy is playing with the package
+
+403
+0:00:46.933333 --> 0:00:47
+The boy is playing with the package
+
+404
+0:00:47 --> 0:00:47.066667
+The boy is playing with the package
+
+405
+0:00:47.066667 --> 0:00:47.133333
+The boy is playing with the package
+
+406
+0:00:47.133333 --> 0:00:47.200000
+The boy is playing with the package
+
+407
+0:00:47.200000 --> 0:00:47.266667
+The boy is playing with the package
+
+408
+0:00:47.266667 --> 0:00:47.333333
+The boy is playing with the package
+
+409
+0:00:47.333333 --> 0:00:47.400000
+The boy is playing with the package
+
+410
+0:00:47.400000 --> 0:00:47.466667
+The boy is playing with the package
+
+411
+0:00:47.466667 --> 0:00:47.533333
+The boy is playing with the package
+
+412
+0:00:47.533333 --> 0:00:47.600000
+The boy is playing with the package
+
+413
+0:00:47.600000 --> 0:00:47.666667
+The boy is playing with the package
+
+414
+0:00:47.666667 --> 0:00:47.733333
+The boy is playing with the package
+
+415
+0:00:47.733333 --> 0:00:47.800000
+The boy is playing with the package
+
+416
+0:00:47.800000 --> 0:00:47.866667
+The boy is playing with the package
+
+417
+0:00:47.866667 --> 0:00:47.933333
+The boy is playing with the package
+
+418
+0:00:47.933333 --> 0:00:48
+The boy is playing with the package
+
+419
+0:00:48 --> 0:00:48.066667
+
+
+420
+0:00:48.066667 --> 0:00:48.133333
+
+
+421
+0:00:48.133333 --> 0:00:48.200000
+
+
+422
+0:00:48.200000 --> 0:00:48.266667
+
+
+423
+0:00:48.266667 --> 0:00:48.333333
+
+
+424
+0:00:48.333333 --> 0:00:48.400000
+
+
+425
+0:00:48.400000 --> 0:00:48.466667
+
+
+426
+0:00:48.466667 --> 0:00:48.533333
+
+
+427
+0:00:48.533333 --> 0:00:48.600000
+
+
+428
+0:00:48.600000 --> 0:00:48.666667
+
+
+429
+0:00:48.666667 --> 0:00:48.733333
+he is delivering the package
+
+430
+0:00:48.733333 --> 0:00:48.800000
+he is delivering the package
+
+431
+0:00:48.800000 --> 0:00:48.866667
+he is delivering the package
+
+432
+0:00:48.866667 --> 0:00:48.933333
+he is delivering the package
+
+433
+0:00:48.933333 --> 0:00:49
+he is delivering the package
+
+434
+0:00:49 --> 0:00:49.066667
+he is delivering the package
+
+435
+0:00:49.066667 --> 0:00:49.133333
+he is delivering the package
+
+436
+0:00:49.133333 --> 0:00:49.200000
+he is delivering the package
+
+437
+0:00:49.200000 --> 0:00:49.266667
+he is delivering the package
+
+438
+0:00:49.266667 --> 0:00:49.333333
+he is delivering the package
+
+439
+0:00:49.333333 --> 0:00:49.400000
+
+
+440
+0:00:49.400000 --> 0:00:49.466667
+
+
+441
+0:00:49.466667 --> 0:00:49.533333
+
+
+442
+0:00:49.533333 --> 0:00:49.600000
+
+
+443
+0:00:49.600000 --> 0:00:49.666667
+
+
+444
+0:00:49.666667 --> 0:00:49.733333
+
+
+445
+0:00:49.733333 --> 0:00:49.800000
+
+
+446
+0:00:49.800000 --> 0:00:49.866667
+
+
+447
+0:00:49.866667 --> 0:00:49.933333
+
+
+448
+0:00:49.933333 --> 0:00:50
+
+
+449
+0:00:50 --> 0:00:50.066667
+
+
+450
+0:00:50.066667 --> 0:00:50.133333
+
+
+451
+0:00:50.133333 --> 0:00:50.200000
+
+
+452
+0:00:50.200000 --> 0:00:50.266667
+
+
+453
+0:00:50.266667 --> 0:00:50.333333
+
+
+454
+0:00:50.333333 --> 0:00:50.400000
+
+
+455
+0:00:50.400000 --> 0:00:50.466667
+
+
+456
+0:00:50.466667 --> 0:00:50.533333
+
+
+457
+0:00:50.533333 --> 0:00:50.600000
+
+
+458
+0:00:50.600000 --> 0:00:50.666667
+
+
+459
+0:00:50.666667 --> 0:00:50.733333
+
+
+460
+0:00:50.733333 --> 0:00:50.800000
+
+
+461
+0:00:50.800000 --> 0:00:50.866667
+
+
+462
+0:00:50.866667 --> 0:00:50.933333
+
+
+463
+0:00:50.933333 --> 0:00:51
+
+
+464
+0:00:51 --> 0:00:51.066667
+
+
+465
+0:00:51.066667 --> 0:00:51.133333
+
+
+466
+0:00:51.133333 --> 0:00:51.200000
+
+
+467
+0:00:51.200000 --> 0:00:51.266667
+
+
+468
+0:00:51.266667 --> 0:00:51.333333
+
+
+469
+0:00:51.333333 --> 0:00:51.400000
+The boy is delivering the package
+
+470
+0:00:51.400000 --> 0:00:51.466667
+The boy is delivering the package
+
+471
+0:00:51.466667 --> 0:00:51.533333
+The boy is delivering the package
+
+472
+0:00:51.533333 --> 0:00:51.600000
+The boy is delivering the package
+
+473
+0:00:51.600000 --> 0:00:51.666667
+The boy is delivering the package
+
+474
+0:00:51.666667 --> 0:00:51.733333
+The boy is delivering the package
+
+475
+0:00:51.733333 --> 0:00:51.800000
+The boy is delivering the package
+
+476
+0:00:51.800000 --> 0:00:51.866667
+The boy is delivering the package
+
+477
+0:00:51.866667 --> 0:00:51.933333
+The boy is delivering the package
+
+478
+0:00:51.933333 --> 0:00:52
+The boy is delivering the package
+
+479
+0:00:52 --> 0:00:52.066667
+the boy is delivering the package
+
+480
+0:00:52.066667 --> 0:00:52.133333
+the boy is delivering the package
+
+481
+0:00:52.133333 --> 0:00:52.200000
+the boy is delivering the package
+
+482
+0:00:52.200000 --> 0:00:52.266667
+the boy is delivering the package
+
+483
+0:00:52.266667 --> 0:00:52.333333
+the boy is delivering the package
+
+484
+0:00:52.333333 --> 0:00:52.400000
+the boy is delivering the package
+
+485
+0:00:52.400000 --> 0:00:52.466667
+the boy is delivering the package
+
+486
+0:00:52.466667 --> 0:00:52.533333
+the boy is delivering the package
+
+487
+0:00:52.533333 --> 0:00:52.600000
+the boy is delivering the package
+
+488
+0:00:52.600000 --> 0:00:52.666667
+the boy is delivering the package
+
+489
+0:00:52.666667 --> 0:00:52.733333
+the boy is delivering the package
+
+490
+0:00:52.733333 --> 0:00:52.800000
+the boy is delivering the package
+
+491
+0:00:52.800000 --> 0:00:52.866667
+the boy is delivering the package
+
+492
+0:00:52.866667 --> 0:00:52.933333
+the boy is delivering the package
+
+493
+0:00:52.933333 --> 0:00:53
+the boy is delivering the package
+
+494
+0:00:53 --> 0:00:53.066667
+the boy is delivering the package
+
+495
+0:00:53.066667 --> 0:00:53.133333
+the boy is delivering the package
+
+496
+0:00:53.133333 --> 0:00:53.200000
+the boy is delivering the package
+
+497
+0:00:53.200000 --> 0:00:53.266667
+the boy is delivering the package
+
+498
+0:00:53.266667 --> 0:00:53.333333
+the boy is delivering the package
+
+499
+0:00:53.333333 --> 0:00:53.400000
+the boy is delivering the package
+
+500
+0:00:53.400000 --> 0:00:53.466667
+the boy is delivering the package
+
+501
+0:00:53.466667 --> 0:00:53.533333
+the boy is delivering the package
+
+502
+0:00:53.533333 --> 0:00:53.600000
+the boy is delivering the package
+
+503
+0:00:53.600000 --> 0:00:53.666667
+the boy is delivering the package
+
+504
+0:00:53.666667 --> 0:00:53.733333
+the boy is delivering the package
+
+505
+0:00:53.733333 --> 0:00:53.800000
+the boy is delivering the package
+
+506
+0:00:53.800000 --> 0:00:53.866667
+the boy is delivering the package
+
+507
+0:00:53.866667 --> 0:00:53.933333
+the boy is delivering the package
+
+508
+0:00:53.933333 --> 0:00:54
+the boy is delivering the package
+
+509
+0:00:54 --> 0:00:54.066667
+the boy is delivering the package
+
+510
+0:00:54.066667 --> 0:00:54.133333
+the boy is delivering the package
+
+511
+0:00:54.133333 --> 0:00:54.200000
+the boy is delivering the package
+
+512
+0:00:54.200000 --> 0:00:54.266667
+the boy is delivering the package
+
+513
+0:00:54.266667 --> 0:00:54.333333
+the boy is delivering the package
+
+514
+0:00:54.333333 --> 0:00:54.400000
+the boy is delivering the package
+
+515
+0:00:54.400000 --> 0:00:54.466667
+the boy is delivering the package
+
+516
+0:00:54.466667 --> 0:00:54.533333
+the boy is delivering the package
+
+517
+0:00:54.533333 --> 0:00:54.600000
+the boy is delivering the package
+
+518
+0:00:54.600000 --> 0:00:54.666667
+the boy is delivering the package
+
+519
+0:00:54.666667 --> 0:00:54.733333
+The boy is delivering the package
+
+520
+0:00:54.733333 --> 0:00:54.800000
+The boy is delivering the package
+
+521
+0:00:54.800000 --> 0:00:54.866667
+The boy is delivering the package
+
+522
+0:00:54.866667 --> 0:00:54.933333
+The boy is delivering the package
+
+523
+0:00:54.933333 --> 0:00:55
+The boy is delivering the package
+
+524
+0:00:55 --> 0:00:55.066667
+The boy is delivering the package
+
+525
+0:00:55.066667 --> 0:00:55.133333
+The boy is delivering the package
+
+526
+0:00:55.133333 --> 0:00:55.200000
+The boy is delivering the package
+
+527
+0:00:55.200000 --> 0:00:55.266667
+The boy is delivering the package
+
+528
+0:00:55.266667 --> 0:00:55.333333
+The boy is delivering the package
+
+529
+0:00:55.333333 --> 0:00:55.400000
+The boy is playing with his toy car
+
+530
+0:00:55.400000 --> 0:00:55.466667
+The boy is playing with his toy car
+
+531
+0:00:55.466667 --> 0:00:55.533333
+The boy is playing with his toy car
+
+532
+0:00:55.533333 --> 0:00:55.600000
+The boy is playing with his toy car
+
+533
+0:00:55.600000 --> 0:00:55.666667
+The boy is playing with his toy car
+
+534
+0:00:55.666667 --> 0:00:55.733333
+The boy is playing with his toy car
+
+535
+0:00:55.733333 --> 0:00:55.800000
+The boy is playing with his toy car
+
+536
+0:00:55.800000 --> 0:00:55.866667
+The boy is playing with his toy car
+
+537
+0:00:55.866667 --> 0:00:55.933333
+The boy is playing with his toy car
+
+538
+0:00:55.933333 --> 0:00:56
+The boy is playing with his toy car
+
+539
+0:00:56 --> 0:00:56.066667
+the boy is playing with the toy car
+
+540
+0:00:56.066667 --> 0:00:56.133333
+the boy is playing with the toy car
+
+541
+0:00:56.133333 --> 0:00:56.200000
+the boy is playing with the toy car
+
+542
+0:00:56.200000 --> 0:00:56.266667
+the boy is playing with the toy car
+
+543
+0:00:56.266667 --> 0:00:56.333333
+the boy is playing with the toy car
+
+544
+0:00:56.333333 --> 0:00:56.400000
+the boy is playing with the toy car
+
+545
+0:00:56.400000 --> 0:00:56.466667
+the boy is playing with the toy car
+
+546
+0:00:56.466667 --> 0:00:56.533333
+the boy is playing with the toy car
+
+547
+0:00:56.533333 --> 0:00:56.600000
+the boy is playing with the toy car
+
+548
+0:00:56.600000 --> 0:00:56.666667
+the boy is playing with the toy car
+
+549
+0:00:56.666667 --> 0:00:56.733333
+the boy is playing with his toy car
+
+550
+0:00:56.733333 --> 0:00:56.800000
+the boy is playing with his toy car
+
+551
+0:00:56.800000 --> 0:00:56.866667
+the boy is playing with his toy car
+
+552
+0:00:56.866667 --> 0:00:56.933333
+the boy is playing with his toy car
+
+553
+0:00:56.933333 --> 0:00:57
+the boy is playing with his toy car
+
+554
+0:00:57 --> 0:00:57.066667
+the boy is playing with his toy car
+
+555
+0:00:57.066667 --> 0:00:57.133333
+the boy is playing with his toy car
+
+556
+0:00:57.133333 --> 0:00:57.200000
+the boy is playing with his toy car
+
+557
+0:00:57.200000 --> 0:00:57.266667
+the boy is playing with his toy car
+
+558
+0:00:57.266667 --> 0:00:57.333333
+the boy is playing with his toy car
+
+559
+0:00:57.333333 --> 0:00:57.400000
+The boy is playing with his toy car
+
+560
+0:00:57.400000 --> 0:00:57.466667
+The boy is playing with his toy car
+
+561
+0:00:57.466667 --> 0:00:57.533333
+The boy is playing with his toy car
+
+562
+0:00:57.533333 --> 0:00:57.600000
+The boy is playing with his toy car
+
+563
+0:00:57.600000 --> 0:00:57.666667
+The boy is playing with his toy car
+
+564
+0:00:57.666667 --> 0:00:57.733333
+The boy is playing with his toy car
+
+565
+0:00:57.733333 --> 0:00:57.800000
+The boy is playing with his toy car
+
+566
+0:00:57.800000 --> 0:00:57.866667
+The boy is playing with his toy car
+
+567
+0:00:57.866667 --> 0:00:57.933333
+The boy is playing with his toy car
+
+568
+0:00:57.933333 --> 0:00:58
+The boy is playing with his toy car
+
+569
+0:00:58 --> 0:00:58.066667
+The boy is playing with the toy car
+
+570
+0:00:58.066667 --> 0:00:58.133333
+The boy is playing with the toy car
+
+571
+0:00:58.133333 --> 0:00:58.200000
+The boy is playing with the toy car
+
+572
+0:00:58.200000 --> 0:00:58.266667
+The boy is playing with the toy car
+
+573
+0:00:58.266667 --> 0:00:58.333333
+The boy is playing with the toy car
+
+574
+0:00:58.333333 --> 0:00:58.400000
+The boy is playing with the toy car
+
+575
+0:00:58.400000 --> 0:00:58.466667
+The boy is playing with the toy car
+
+576
+0:00:58.466667 --> 0:00:58.533333
+The boy is playing with the toy car
+
+577
+0:00:58.533333 --> 0:00:58.600000
+The boy is playing with the toy car
+
+578
+0:00:58.600000 --> 0:00:58.666667
+The boy is playing with the toy car
+
+579
+0:00:58.666667 --> 0:00:58.733333
+The boy is playing with his toy car
+
+580
+0:00:58.733333 --> 0:00:58.800000
+The boy is playing with his toy car
+
+581
+0:00:58.800000 --> 0:00:58.866667
+The boy is playing with his toy car
+
+582
+0:00:58.866667 --> 0:00:58.933333
+The boy is playing with his toy car
+
+583
+0:00:58.933333 --> 0:00:59
+The boy is playing with his toy car
+
+584
+0:00:59 --> 0:00:59.066667
+The boy is playing with his toy car
+
+585
+0:00:59.066667 --> 0:00:59.133333
+The boy is playing with his toy car
+
+586
+0:00:59.133333 --> 0:00:59.200000
+The boy is playing with his toy car
+
+587
+0:00:59.200000 --> 0:00:59.266667
+The boy is playing with his toy car
+
+588
+0:00:59.266667 --> 0:00:59.333333
+The boy is playing with his toy car
+
+589
+0:00:59.333333 --> 0:00:59.400000
+The boy is playing with his toy car
+
+590
+0:00:59.400000 --> 0:00:59.466667
+The boy is playing with his toy car
+
+591
+0:00:59.466667 --> 0:00:59.533333
+The boy is playing with his toy car
+
+592
+0:00:59.533333 --> 0:00:59.600000
+The boy is playing with his toy car
+
+593
+0:00:59.600000 --> 0:00:59.666667
+The boy is playing with his toy car
+
+594
+0:00:59.666667 --> 0:00:59.733333
+The boy is playing with his toy car
+
+595
+0:00:59.733333 --> 0:00:59.800000
+The boy is playing with his toy car
+
+596
+0:00:59.800000 --> 0:00:59.866667
+The boy is playing with his toy car
+
+597
+0:00:59.866667 --> 0:00:59.933333
+The boy is playing with his toy car
+
+598
+0:00:59.933333 --> 0:01:00
+The boy is playing with his toy car
+
+599
+0:01:00 --> 0:01:00.066667
+The boy is playing with his toy car
+
+600
+0:01:00.066667 --> 0:01:00.133333
+The boy is playing with his toy car
+
+601
+0:01:00.133333 --> 0:01:00.200000
+The boy is playing with his toy car
+
+602
+0:01:00.200000 --> 0:01:00.266667
+The boy is playing with his toy car
+
+603
+0:01:00.266667 --> 0:01:00.333333
+The boy is playing with his toy car
+
+604
+0:01:00.333333 --> 0:01:00.400000
+The boy is playing with his toy car
+
+605
+0:01:00.400000 --> 0:01:00.466667
+The boy is playing with his toy car
+
+606
+0:01:00.466667 --> 0:01:00.533333
+The boy is playing with his toy car
+
+607
+0:01:00.533333 --> 0:01:00.600000
+The boy is playing with his toy car
+
+608
+0:01:00.600000 --> 0:01:00.666667
+The boy is playing with his toy car
+
+609
+0:01:00.666667 --> 0:01:00.733333
+The boy is playing with his toy car
+
+610
+0:01:00.733333 --> 0:01:00.800000
+The boy is playing with his toy car
+
+611
+0:01:00.800000 --> 0:01:00.866667
+The boy is playing with his toy car
+
+612
+0:01:00.866667 --> 0:01:00.933333
+The boy is playing with his toy car
+
+613
+0:01:00.933333 --> 0:01:01
+The boy is playing with his toy car
+
+614
+0:01:01 --> 0:01:01.066667
+The boy is playing with his toy car
+
+615
+0:01:01.066667 --> 0:01:01.133333
+The boy is playing with his toy car
+
+616
+0:01:01.133333 --> 0:01:01.200000
+The boy is playing with his toy car
+
+617
+0:01:01.200000 --> 0:01:01.266667
+The boy is playing with his toy car
+
+618
+0:01:01.266667 --> 0:01:01.333333
+The boy is playing with his toy car
+
+619
+0:01:01.333333 --> 0:01:01.400000
+the boy is playing with his toy car
+
+620
+0:01:01.400000 --> 0:01:01.466667
+the boy is playing with his toy car
+
+621
+0:01:01.466667 --> 0:01:01.533333
+the boy is playing with his toy car
+
+622
+0:01:01.533333 --> 0:01:01.600000
+the boy is playing with his toy car
+
+623
+0:01:01.600000 --> 0:01:01.666667
+the boy is playing with his toy car
+
+624
+0:01:01.666667 --> 0:01:01.733333
+the boy is playing with his toy car
+
+625
+0:01:01.733333 --> 0:01:01.800000
+the boy is playing with his toy car
+
+626
+0:01:01.800000 --> 0:01:01.866667
+the boy is playing with his toy car
+
+627
+0:01:01.866667 --> 0:01:01.933333
+the boy is playing with his toy car
+
+628
+0:01:01.933333 --> 0:01:02
+the boy is playing with his toy car
+
+629
+0:01:02 --> 0:01:02.066667
+the boy is driving the toy car
+
+630
+0:01:02.066667 --> 0:01:02.133333
+the boy is driving the toy car
+
+631
+0:01:02.133333 --> 0:01:02.200000
+the boy is driving the toy car
+
+632
+0:01:02.200000 --> 0:01:02.266667
+the boy is driving the toy car
+
+633
+0:01:02.266667 --> 0:01:02.333333
+the boy is driving the toy car
+
+634
+0:01:02.333333 --> 0:01:02.400000
+the boy is driving the toy car
+
+635
+0:01:02.400000 --> 0:01:02.466667
+the boy is driving the toy car
+
+636
+0:01:02.466667 --> 0:01:02.533333
+the boy is driving the toy car
+
+637
+0:01:02.533333 --> 0:01:02.600000
+the boy is driving the toy car
+
+638
+0:01:02.600000 --> 0:01:02.666667
+the boy is driving the toy car
+
+639
+0:01:02.666667 --> 0:01:02.733333
+the boy is driving the toy car
+
+640
+0:01:02.733333 --> 0:01:02.800000
+the boy is driving the toy car
+
+641
+0:01:02.800000 --> 0:01:02.866667
+the boy is driving the toy car
+
+642
+0:01:02.866667 --> 0:01:02.933333
+the boy is driving the toy car
+
+643
+0:01:02.933333 --> 0:01:03
+the boy is driving the toy car
+
+644
+0:01:03 --> 0:01:03.066667
+the boy is driving the toy car
+
+645
+0:01:03.066667 --> 0:01:03.133333
+the boy is driving the toy car
+
+646
+0:01:03.133333 --> 0:01:03.200000
+the boy is driving the toy car
+
+647
+0:01:03.200000 --> 0:01:03.266667
+the boy is driving the toy car
+
+648
+0:01:03.266667 --> 0:01:03.333333
+the boy is driving the toy car
+
+649
+0:01:03.333333 --> 0:01:03.400000
+The boy is driving the toy car
+
+650
+0:01:03.400000 --> 0:01:03.466667
+The boy is driving the toy car
+
+651
+0:01:03.466667 --> 0:01:03.533333
+The boy is driving the toy car
+
+652
+0:01:03.533333 --> 0:01:03.600000
+The boy is driving the toy car
+
+653
+0:01:03.600000 --> 0:01:03.666667
+The boy is driving the toy car
+
+654
+0:01:03.666667 --> 0:01:03.733333
+The boy is driving the toy car
+
+655
+0:01:03.733333 --> 0:01:03.800000
+The boy is driving the toy car
+
+656
+0:01:03.800000 --> 0:01:03.866667
+The boy is driving the toy car
+
+657
+0:01:03.866667 --> 0:01:03.933333
+The boy is driving the toy car
+
+658
+0:01:03.933333 --> 0:01:04
+The boy is driving the toy car
+
+659
+0:01:04 --> 0:01:04.066667
+the boy is driving the toy car
+
+660
+0:01:04.066667 --> 0:01:04.133333
+the boy is driving the toy car
+
+661
+0:01:04.133333 --> 0:01:04.200000
+the boy is driving the toy car
+
+662
+0:01:04.200000 --> 0:01:04.266667
+the boy is driving the toy car
+
+663
+0:01:04.266667 --> 0:01:04.333333
+the boy is driving the toy car
+
+664
+0:01:04.333333 --> 0:01:04.400000
+the boy is driving the toy car
+
+665
+0:01:04.400000 --> 0:01:04.466667
+the boy is driving the toy car
+

@@ -82,5 +82,5 @@ class TrackerManager:
 
     def updateTrackerClipImg(self, img):
         for tracker in self.trackers:
-            tracker.update_clip_queue(img, useBG=True)
+            tracker.update_clip_queue(img, useBG=False)
                 

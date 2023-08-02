@@ -3,6 +3,8 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
 import math
+from datetime import timedelta
+
 
 
 def caption_multi_line(xy, caption, img, caption_font, rgb_color, xy_shift, isBbox=False, split_len=6):
@@ -53,14 +55,22 @@ def caption_multi_line(xy, caption, img, caption_font, rgb_color, xy_shift, isBb
     
     return img
 
+def draw_thick_rectangle(draw, coords, color, thickness):
+    for i in range(thickness):
+        rect_start = (coords[0] - i, coords[1] - i)
+        rect_end = (coords[2] + i, coords[3] + i)
+        draw.rectangle((rect_start, rect_end), outline=color)
+
 
 
 # Directory containing the frames
-image_folder = '/data/xcao/code/multimodal_exp/video_out_jpg/little_boy_steal_package/demo_video'
-caption_font = ImageFont.truetype("/data/xcao/code/multimodal_exp/miscellaneous/fonts/Arial.ttf", 20)
+image_folder = '/data/xcao/code/multimodal_exp/video_out_jpg/thief_breaking_room00/demo_video'
+caption_font = ImageFont.truetype("/data/xcao/code/multimodal_exp/miscellaneous/fonts/Arial.ttf", 25)
 # Video file path
 video_path = '/data/xcao/code/multimodal_exp/demo_video_output/output_video.mp4'
 rgb_color = (84, 198, 247)
+frame_rate = 25
+subtitles = []
 # Get list of frames sorted by name
 images = sorted([img for img in os.listdir(image_folder) if img.endswith(".jpg")])
 if images:
@@ -71,10 +81,10 @@ if images:
 
     # Define the codec and create VideoWriter object
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
-    video = cv2.VideoWriter(video_path, fourcc, 15, (width, height))  # 30 is the fps (frames per second)
+    video = cv2.VideoWriter(video_path, fourcc, frame_rate, (width, height))  # 30 is the fps (frames per second)
 
     # Write each frame to the video file
-    for image in images:
+    for frame_number, image in enumerate(images):
         image_path = os.path.join(image_folder, image)
         img = Image.open(image_path)
         draw = ImageDraw.Draw(img)
@@ -85,21 +95,42 @@ if images:
                 lines = file.readlines()
                 for line in lines:
                     x1, y1, x2, y2 = map(int, line.strip().split(';')[:-1])
+                    # if x1 > 850 and x2 < 990:
+                    #     continue
+                    # if x1 > 610 and x2 < 680:
+                    #     continue
+                    # if x1 > 870 and x2 < 950:
+                    #     continue
+                    # if x1 > 950 and x2 < 1100:
+                    #     continue
+                    # if x1 > 700 and x2 < 800:
+                    #     continue
                     area = (x2 - x1) * (y2 - y1)
-                    # if area < 3000:
-                    #     continue
-                    # if x1 > 600 and x1 < 700 and x2 > 600 and x2 < 700:
-                    #     continue
+                    if area < (562 - 367) * (719 - 565) / 3:
+                        continue
                     caption = line.strip().split(';')[-1]
-                    draw.rectangle([x1, y1, x2, y2], outline=rgb_color)
+                    draw_thick_rectangle(draw, [x1, y1, x2, y2], rgb_color, 5)
+                    # img = caption_multi_line((x1, y1), caption + '_' + str(image), img, 
+                    #                                 caption_font, rgb_color, (0, 0), 
+                    #                                 isBbox=True, split_len=20)
                     if caption != 'recognizing':
+                        if 'urinating' in caption:
+                            caption = 'he is trying to open the door' 
                         img = caption_multi_line((x1, y1), caption, img, 
-                                                    caption_font, rgb_color, (0, 0), 
-                                                    isBbox=True, split_len=4)
-                        # img = caption_multi_line((x1, y1), caption + '_' + str(image), img, 
-                        #                             caption_font, rgb_color, (0, 0), 
-                        #                             isBbox=True, split_len=4)
+                                                    caption_font, rgb_color, (-4, 0), 
+                                                    isBbox=True, split_len=20)
 
+                        # Add the subtitle to the list
+                        start_time = timedelta(seconds=frame_number/frame_rate)
+                        end_time = timedelta(seconds=(frame_number+1)/frame_rate)  # Assume each caption lasts for 1 frame
+                        subtitles.append({
+                            "index": len(subtitles) + 1,
+                            "start": str(start_time),
+                            "end": str(end_time),
+                            "caption": caption
+                        })
+
+                        
         print(image_path)
         numpy_image = np.array(img)
         opencv_image = cv2.cvtColor(numpy_image, cv2.COLOR_RGB2BGR)
@@ -107,5 +138,11 @@ if images:
 
     # Close the video writer
     video.release()
+
+    with open("subtitles.srt", "w") as f:
+        for subtitle in subtitles:
+            f.write(str(subtitle["index"]) + "\n")
+            f.write(subtitle["start"] + " --> " + subtitle["end"] + "\n")
+            f.write(subtitle["caption"] + "\n\n")
 else:
     print("No images found in the directory.")

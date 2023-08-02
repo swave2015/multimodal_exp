@@ -4,7 +4,7 @@ import cv2
 from collections import Counter
 
 class ObjectTracker:
-    def __init__(self, bbox, capQueuLen=9, clipQueueLen=5, contextQueuLen=1):
+    def __init__(self, bbox, capQueuLen=9, clipQueueLen=9, contextQueuLen=1):
         self.x1 = bbox[0]
         self.y1 = bbox[1]
         self.x2 = bbox[2]
@@ -17,7 +17,7 @@ class ObjectTracker:
         self.captionQueue = deque(maxlen=capQueuLen)
         self.clipImg = None
         self.context = deque(maxlen=contextQueuLen)
-        self.enlarge_factor = 1.0
+        self.enlarge_factor = 2.0
         self.caption_show = 'recognizing'
         self.caption_last_infer = None
         self.caption_keep_counter = 0
@@ -42,7 +42,7 @@ class ObjectTracker:
     def update_context(self, context):
         self.context.append(context)
 
-    def update_clip_queue(self, frame, useBG=True):
+    def update_clip_queue(self, frame, useBG=False):
         box_width = self.x2 - self.x1
         box_height = self.y2 - self.y1
         frame_h, frame_w, _ = frame.shape
