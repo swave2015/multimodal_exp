@@ -1,0 +1,1 @@
+python my_beitv3_model.py --model beit3_large_patch16_384  --input_size 384 --task coco_retrieval --batch_size 16 --sentencepiece_model /home/caoxh/multimodal_exp/models_weights/beit3.spm --finetune /home/caoxh/multimodal_exp/models_weights/beit3_large_patch16_384_coco_retrieval.pth --data_path /home/caoxh/beitv3_dataset --eval --dist_eval
