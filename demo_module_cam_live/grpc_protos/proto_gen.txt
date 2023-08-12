@@ -1,0 +1,1 @@
+python -m grpc_tools.protoc -I./grpc_protos --python_out=./grpc_protos --grpc_python_out=./grpc_protos ./grpc_protos/beit3service.proto

@@ -25,18 +25,18 @@ beit3_service = "http://106.75.22.28:3000/beit3"
 def worker_service_request():
     while True:
         data = data_queue.get()
-        if data is None:
-            break  # exit if a None value is received
-        call_start_time = time.time()
-        try:
-            response = requests.post(beit3_service, json=data)
-            response.raise_for_status()
-            print(response.text)
-        except requests.RequestException as e:
-            print(f"An error occurred: {e}")
-        call_end_time = time.time()
-        elapsed_time = call_end_time - call_start_time
-        print('call_elapsed_time: ', elapsed_time)
+        # if data is None:
+        #     break  # exit if a None value is received
+        # call_start_time = time.time()
+        # try:
+        #     response = requests.post(beit3_service, json=data)
+        #     response.raise_for_status()
+        #     print(response.text)
+        # except requests.RequestException as e:
+        #     print(f"An error occurred: {e}")
+        # call_end_time = time.time()
+        # elapsed_time = call_end_time - call_start_time
+        # print('call_elapsed_time: ', elapsed_time)
         
 service_request_process = Process(target=worker_service_request)
 service_request_process.start()
@@ -51,7 +51,7 @@ yolo_model_path = '/home/caoxh/multimodal_exp/models_weights/yolov8l.pt'
 rgb_color = (84, 198, 247)
 bgr_color = rgb_color[::-1]
 source_path = '../single_videos/Package_Delivery_Driver_Gone_Wrong_FAIL'
-target_cls = [0]
+target_cls = [2]
 img_save_dir_base = '../video_out_jpg/'
 demo_video_save_path = 'demo_video'
 caption_font = ImageFont.truetype("../miscellaneous/fonts/Arial.ttf", 20)

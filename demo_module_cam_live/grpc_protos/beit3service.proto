@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package beit3service;
+
+message Beit3Request {
+    bytes serialized_tensor = 1;
+    string frame_id = 2;
+    string tracker_id = 3;
+}
+
+message Beit3Response {
+    string retcode = 1;
+}
+
+service Beit3Service {
+    rpc EnqueueItem (Beit3Request) returns (Beit3Response);
+}
