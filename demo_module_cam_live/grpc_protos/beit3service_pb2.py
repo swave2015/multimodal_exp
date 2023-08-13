@@ -13,7 +13,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x12\x62\x65it3service.proto\x12\x0c\x62\x65it3service\"O\n\x0c\x42\x65it3Request\x12\x19\n\x11serialized_tensor\x18\x01 \x01(\x0c\x12\x10\n\x08\x66rame_id\x18\x02 \x01(\t\x12\x12\n\ntracker_id\x18\x03 \x01(\t\" \n\rBeit3Response\x12\x0f\n\x07retcode\x18\x01 \x01(\t2V\n\x0c\x42\x65it3Service\x12\x46\n\x0b\x45nqueueItem\x12\x1a.beit3service.Beit3Request\x1a\x1b.beit3service.Beit3Responseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x12\x62\x65it3service.proto\x12\x0c\x62\x65it3service\"C\n\x0c\x42\x65it3Request\x12\r\n\x05image\x18\x01 \x01(\x0c\x12\x10\n\x08\x66rame_id\x18\x02 \x01(\t\x12\x12\n\ntracker_id\x18\x03 \x01(\t\" \n\rBeit3Response\x12\x0f\n\x07retcode\x18\x01 \x01(\t2V\n\x0c\x42\x65it3Service\x12\x46\n\x0b\x45nqueueItem\x12\x1a.beit3service.Beit3Request\x1a\x1b.beit3service.Beit3Responseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -22,9 +22,9 @@ if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   _globals['_BEIT3REQUEST']._serialized_start=36
-  _globals['_BEIT3REQUEST']._serialized_end=115
-  _globals['_BEIT3RESPONSE']._serialized_start=117
-  _globals['_BEIT3RESPONSE']._serialized_end=149
-  _globals['_BEIT3SERVICE']._serialized_start=151
-  _globals['_BEIT3SERVICE']._serialized_end=237
+  _globals['_BEIT3REQUEST']._serialized_end=103
+  _globals['_BEIT3RESPONSE']._serialized_start=105
+  _globals['_BEIT3RESPONSE']._serialized_end=137
+  _globals['_BEIT3SERVICE']._serialized_start=139
+  _globals['_BEIT3SERVICE']._serialized_end=225
 # @@protoc_insertion_point(module_scope)

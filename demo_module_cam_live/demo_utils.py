@@ -173,3 +173,30 @@ def caption_multi_line(xy, caption, img, caption_font, rgb_color, xy_shift, isBb
 #         merged_boxes.append(base_box)
 
 #     return merged_boxes
+
+
+def resize_or_pad(input_path, output_path, target_size):
+    """
+    Resize the image if it's larger than the target size. 
+    If it's smaller, pad it to the target size.
+    
+    Parameters:
+    - input_path: path to the original image.
+    - output_path: path to save the resized or padded image.
+    - target_size: desired size for the output image.
+    """
+    img = cv2.imread(input_path)
+    
+    if img.shape[0] > target_size or img.shape[1] > target_size:
+        img_resized = cv2.resize(img, (target_size, target_size))
+        cv2.imwrite(output_path, img_resized)
+    else:
+        top = (target_size - img.shape[0]) // 2
+        bottom = target_size - img.shape[0] - top
+        left = (target_size - img.shape[1]) // 2
+        right = target_size - img.shape[1] - left
+        img_padded = cv2.copyMakeBorder(img, top, bottom, left, right, cv2.BORDER_CONSTANT, value=[0, 0, 0])
+        cv2.imwrite(output_path, img_padded)
+
+# Example usage
+resize_or_pad("path_to_original_image.jpg", "path_to_output_image.jpg", 300)

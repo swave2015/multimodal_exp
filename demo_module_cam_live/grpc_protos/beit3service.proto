@@ -3,7 +3,7 @@ syntax = "proto3";
 package beit3service;
 
 message Beit3Request {
-    bytes serialized_tensor = 1;
+    bytes image = 1;
     string frame_id = 2;
     string tracker_id = 3;
 }
